@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ en A Coruña para Bodas y Eventos | DJ Ponte</title>
+<meta name="description" content="DJ profesional en A Coruña y toda Galicia. Bodas, cumpleaños, empresas y sesiones vermú con vinilo. Consulta tu fecha por WhatsApp.">
+<link rel="canonical" href="https://www.djponte.com/">
+<meta property="og:title" content="DJ en A Coruña para Bodas y Eventos | DJ Ponte">
+<meta property="og:description" content="DJ profesional en A Coruña y toda Galicia. Bodas, cumpleaños, empresas y sesiones vermú con vinilo.">
+<meta property="og:url" content="https://www.djponte.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%23121212"/><circle cx="32" cy="32" r="24" fill="none" stroke="%232A2620" stroke-width="2"/><circle cx="32" cy="32" r="18" fill="none" stroke="%232A2620" stroke-width="2"/><circle cx="32" cy="32" r="11" fill="%23B98E3F"/><circle cx="32" cy="32" r="2.5" fill="%23121212"/></svg>' type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>/* ==========================================================================
+   DJ PONTE — styles.css
+   Identidad: crema / negro noche / oro viejo · Cormorant Garamond + Montserrat
+   ========================================================================== */
+
+:root{
+  --negro:#121212;
+  --vinilo:#1E1B16;
+  --crema:#F6F1E7;
+  --crema-2:#EFE6D4;
+  --oro:#B98E3F;
+  --oro-claro:#D8B86C;
+  --tinta:#2A2620;
+  --tinta-suave:#5C544A;
+  --blanco-roto:#FBF8F1;
+  --whatsapp:#25D366;
+  --whatsapp-dark:#179848;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(18,18,18,.10);
+  --container:1120px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',system-ui,sans-serif;
+  font-size:16px;line-height:1.7;
+  color:var(--tinta);background:var(--crema);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+ul{list-style:none}
+
+.container{max-width:var(--container);margin:0 auto;padding:0 22px}
+
+/* ---------- Tipografía ---------- */
+h1,h2,h3,.logo{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;color:inherit}
+h1{font-size:clamp(2.3rem,5.4vw,3.9rem);letter-spacing:-.01em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:-.005em}
+h3{font-size:1.32rem;line-height:1.3}
+h1 em,h2 em{font-style:italic;color:var(--oro)}
+p{margin-bottom:1em}
+.eyebrow{
+  display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--oro);margin-bottom:14px;
+}
+.lead{font-size:1.08rem;color:var(--tinta-suave);max-width:60ch}
+.section--dark .lead{color:#CFC6B8}
+
+/* ---------- Botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55em;
+  font-family:'Montserrat',sans-serif;font-weight:600;font-size:.86rem;
+  letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
+  padding:16px 28px;border-radius:999px;border:2px solid transparent;
+  cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+  min-height:48px;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.btn--wa{background:var(--whatsapp);color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.35)}
+.btn--wa:hover{background:var(--whatsapp-dark)}
+.btn--sec{background:transparent;color:var(--tinta);border-color:var(--oro)}
+.btn--sec:hover{background:var(--oro);color:#fff}
+.section--dark .btn--sec,.hero--dark .btn--sec{color:var(--crema)}
+.btn--small{padding:10px 20px;font-size:.78rem;min-height:40px}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.micro{font-size:.8rem;color:var(--tinta-suave);margin-top:14px}
+.section--dark .micro,.hero--dark .micro,.cta-final .micro{color:#A89E8E}
+
+/* ---------- Header ---------- */
+.header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  background:rgba(18,18,18,.93);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(185,142,63,.25);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-size:1.45rem;color:var(--crema);text-decoration:none;letter-spacing:.02em}
+.logo span{color:var(--oro)}
+.nav__menu{display:flex;align-items:center;gap:26px}
+.nav__menu a{
+  color:var(--crema);text-decoration:none;font-size:.82rem;font-weight:500;
+  letter-spacing:.05em;transition:color .15s;
+}
+.nav__menu a:hover,.nav__menu a[aria-current="page"]{color:var(--oro-claro)}
+.nav__toggle{
+  display:none;background:none;border:none;color:var(--crema);
+  font-size:1.7rem;cursor:pointer;line-height:1;padding:6px;
+}
+
+/* ---------- Hero ---------- */
+.hero{padding:140px 0 80px}
+.hero--dark{background:var(--negro);color:var(--crema)}
+.hero--dark .lead{color:#CFC6B8}
+.hero__grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.trust{
+  display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;
+  font-size:.82rem;font-weight:500;color:var(--tinta-suave);
+}
+.hero--dark .trust{color:#B9AF9F}
+.trust b{color:var(--oro)}
+
+/* ---------- Vinilo animado (firma de la web) ---------- */
+.vinyl{display:flex;justify-content:center}
+.vinyl__disc{
+  --size:min(380px,72vw);
+  width:var(--size);height:var(--size);border-radius:50%;
+  background:
+    radial-gradient(circle at 35% 32%,rgba(255,255,255,.10),transparent 42%),
+    repeating-radial-gradient(circle,#181512 0 2px,#0E0C0A 2px 4px);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 24px 60px rgba(0,0,0,.55),inset 0 0 0 2px rgba(185,142,63,.18);
+  animation:spin 9s linear infinite;
+}
+.vinyl__label{
+  width:33%;height:33%;border-radius:50%;
+  background:radial-gradient(circle,var(--oro-claro) 0 8%,var(--oro) 9% 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--negro);
+  text-align:center;line-height:1.05;font-size:clamp(1rem,3vw,1.5rem);
+  letter-spacing:.04em;box-shadow:0 0 0 6px #0E0C0A;
+}
+.vinyl__label small{font-family:'Montserrat',sans-serif;font-size:.42em;font-weight:700;letter-spacing:.3em;margin-top:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .vinyl__disc{animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Secciones ---------- */
+.section{padding:84px 0}
+.section--dark{background:var(--vinilo);color:var(--crema)}
+.section--dark .eyebrow{color:var(--oro-claro)}
+.section--alt{background:var(--crema-2)}
+.section__head{max-width:680px;margin-bottom:44px}
+.center{text-align:center}
+.center .section__head{margin-inline:auto}
+
+/* ---------- Grid de tarjetas ---------- */
+.grid{display:grid;gap:26px}
+.grid--2{grid-template-columns:repeat(2,1fr)}
+.grid--3{grid-template-columns:repeat(3,1fr)}
+.card{
+  background:var(--blanco-roto);border:1px solid rgba(185,142,63,.22);
+  border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(18,18,18,.14)}
+.card h3{margin-bottom:10px}
+.card p{font-size:.94rem;color:var(--tinta-suave);flex:1}
+.card .price{font-weight:700;color:var(--oro);font-size:.85rem;letter-spacing:.04em;margin-bottom:14px}
+.card__link{
+  font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--oro);text-decoration:none;margin-top:auto;
+}
+.card__link:hover{text-decoration:underline}
+a.card{text-decoration:none;color:inherit}
+.section--dark .card{background:#262219;border-color:rgba(185,142,63,.3)}
+.section--dark .card p{color:#C9BFAE}
+
+/* ---------- Pilares / features ---------- */
+.feature h3{margin-bottom:8px}
+.feature h3::before{content:"";display:block;width:34px;height:2px;background:var(--oro);margin-bottom:14px}
+.feature p{font-size:.95rem;color:var(--tinta-suave)}
+.section--dark .feature p{color:#C9BFAE}
+
+/* ---------- Pasos ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:paso}
+.step{counter-increment:paso}
+.step::before{
+  content:counter(paso,decimal-leading-zero);
+  font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;
+  color:var(--oro);display:block;line-height:1;margin-bottom:10px;
+}
+.step h3{font-size:1.15rem;margin-bottom:8px}
+.step p{font-size:.92rem;color:var(--tinta-suave)}
+
+/* ---------- Reseñas ---------- */
+.review{
+  background:var(--blanco-roto);border-radius:var(--radius);padding:28px 26px;
+  border:1px solid rgba(185,142,63,.22);box-shadow:var(--shadow);
+}
+.review .stars{color:var(--oro);letter-spacing:.18em;font-size:.95rem;margin-bottom:12px}
+.review blockquote{font-size:.95rem;color:var(--tinta);font-style:italic}
+.review figcaption{margin-top:14px;font-size:.8rem;font-weight:600;color:var(--tinta-suave)}
+.google-link{
+  display:inline-block;margin-top:30px;font-size:.86rem;font-weight:700;
+  color:var(--oro);text-decoration:none;letter-spacing:.04em;
+}
+.google-link:hover{text-decoration:underline}
+
+/* ---------- FAQ ---------- */
+.faq details{
+  background:var(--blanco-roto);border:1px solid rgba(185,142,63,.22);
+  border-radius:var(--radius);margin-bottom:14px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;list-style:none;padding:20px 54px 20px 24px;position:relative;
+  font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);
+  color:var(--oro);font-size:1.5rem;font-family:'Montserrat',sans-serif;font-weight:400;
+  transition:transform .2s;
+}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details>p{padding:0 24px 22px;font-size:.94rem;color:var(--tinta-suave)}
+.faq h2{margin:40px 0 20px}
+.faq h2:first-of-type{margin-top:0}
+
+/* ---------- Precios ---------- */
+.price-card .from{
+  font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--oro);
+  font-weight:600;margin-bottom:10px;
+}
+.price-card .from small{font-size:.45em;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+/* ---------- CTA final ---------- */
+.cta-final{background:var(--negro);color:var(--crema);text-align:center;padding:96px 0}
+.cta-final h2{max-width:620px;margin:0 auto 18px}
+.cta-final p{max-width:560px;margin:0 auto;color:#CFC6B8}
+.cta-final .btn-row{justify-content:center}
+
+/* ---------- Aviso editable ---------- */
+.edit-note{
+  background:#FFF6DF;border:1px dashed var(--oro);border-radius:10px;
+  padding:10px 16px;font-size:.78rem;color:#8A6A24;margin-bottom:18px;
+}
+
+/* ---------- Formulario contacto ---------- */
+.form{display:grid;gap:18px;max-width:560px}
+.form label{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--tinta-suave)}
+.form input,.form select,.form textarea{
+  width:100%;padding:14px 16px;margin-top:6px;font:inherit;font-size:.95rem;
+  border:1px solid rgba(185,142,63,.4);border-radius:10px;background:var(--blanco-roto);color:var(--tinta);
+}
+.form input:focus,.form select:focus,.form textarea:focus{outline:3px solid rgba(185,142,63,.35)}
+.contact-data{font-size:.98rem}
+.contact-data li{margin-bottom:10px}
+.contact-data a{color:var(--oro);font-weight:600;text-decoration:none}
+.contact-data a:hover{text-decoration:underline}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--negro);color:#B9AF9F;padding:64px 0 36px;font-size:.86rem}
+.footer__grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer .logo{font-size:1.6rem;margin-bottom:12px;display:inline-block}
+.footer h3{color:var(--crema);font-size:1.05rem;margin-bottom:14px}
+.footer a{color:#B9AF9F;text-decoration:none}
+.footer a:hover{color:var(--oro-claro)}
+.footer li{margin-bottom:8px}
+.footer__bottom{
+  border-top:1px solid rgba(185,142,63,.2);padding-top:24px;
+  display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:.78rem;
+}
+
+/* ---------- WhatsApp flotante ---------- */
+.wa-float{
+  position:fixed;right:18px;bottom:18px;z-index:99;
+  width:58px;height:58px;border-radius:50%;background:var(--whatsapp);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 28px rgba(0,0,0,.3);transition:transform .15s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ---------- Responsive ---------- */
+@media (max-width:920px){
+  .hero{padding:120px 0 60px}
+  .hero__grid{grid-template-columns:1fr;gap:40px}
+  .hero__grid .vinyl{order:2}
+  .grid--3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .footer__grid{grid-template-columns:1fr 1fr}
+  .nav__toggle{display:block}
+  .nav__menu{
+    position:fixed;top:68px;left:0;right:0;flex-direction:column;gap:0;
+    background:var(--negro);padding:10px 22px 24px;display:none;
+    border-bottom:1px solid rgba(185,142,63,.3);
+  }
+  .nav__menu.open{display:flex}
+  .nav__menu li{width:100%}
+  .nav__menu a{display:block;padding:14px 0;font-size:1rem;border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav__menu .btn{margin-top:14px;width:100%}
+}
+@media (max-width:600px){
+  .section{padding:64px 0}
+  .grid--2,.grid--3,.steps{grid-template-columns:1fr}
+  .footer__grid{grid-template-columns:1fr}
+  .btn{width:100%}
+  .btn-row{flex-direction:column}
+}
+
+/* --- single-page --- */
+.pv-page{display:none}.pv-page.active{display:block}
+.photo{border-radius:14px;box-shadow:0 14px 38px rgba(18,18,18,.22);width:100%;height:auto;display:block}
+.photo--portrait{max-width:360px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "DJ Ponte",
+  "description": "DJ profesional en A Coruña para bodas, cumpleaños, eventos privados, eventos de empresa y sesiones vermú con vinilo en toda Galicia.",
+  "url": "https://www.djponte.com",
+  "telephone": "+34669060192",
+  "priceRange": "300€ - 1200€",
+  "address": { "@type": "PostalAddress", "addressLocality": "A Coruña", "addressRegion": "Galicia", "addressCountry": "ES" },
+  "areaServed": ["A Coruña", "Santiago de Compostela", "Ferrol", "Betanzos", "Oleiros", "Galicia"],
+  "sameAs": ["https://www.instagram.com/emilioponte"]
+}
+</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Cuánto cuesta contratar a DJ Ponte?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Las fiestas de cumpleaños y eventos privados parten de 300 € (3-4 horas con sonido e iluminación incluidos). Las bodas parten de 590 € en formato solo fiesta y de 850 € en formato día completo (aperitivo, banquete y barra libre). El precio exacto depende de horas, espacio y extras, y siempre se entrega cerrado y por escrito antes de reservar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo se reserva una fecha?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Consultas disponibilidad por WhatsApp o formulario, recibes presupuesto cerrado en menos de 24 horas y la fecha se bloquea con una señal y un acuerdo por escrito. Desde ese momento, la fecha deja de ofrecerse a nadie más."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Con cuánta antelación hay que reservar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Bodas: entre 6 y 12 meses, especialmente los sábados de mayo a octubre. Cumpleaños y eventos privados: 2-4 semanas suele ser suficiente, aunque los sábados se agotan antes. Eventos de Navidad para empresas: reservar en septiembre-octubre."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿El presupuesto compromete a algo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Pedir precio y disponibilidad es gratis y sin compromiso. El compromiso empieza cuando se firma la reserva."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué estilos de música pinchas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "De todo lo que llena una pista: éxitos actuales, los 80, 90 y 2000, reggaetón y latino, pop español, rock, y mis especialidades de día — deep house, funk, soul y groove en vinilo. La sesión se adapta al público concreto de cada evento, no al revés."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puedo elegir las canciones de mi evento?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Antes del evento me pasas tus imprescindibles (las que tienen que sonar) y tus prohibidas (las que no quieres ni en versión remix). Sobre esa base, yo construyo y decido la sesión en directo leyendo la pista."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Aceptas peticiones de los invitados durante la fiesta?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, con criterio profesional: una petición entra cuando suma a la pista. Con el pack digital (150 €), los invitados piden canciones desde el móvil escaneando un QR y yo las gestiono desde la cabina."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué es el Vinyl Set?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Una sesión de música en vinilo pinchada en directo con platos Akiyama DJ-2000, pensada para aperitivos de boda, cócteles de empresa y eventos premium. Deep house, funk, soul y clásicos a volumen de conversación, con la estética del vinilo como parte de la experiencia."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Llevas tu propio equipo de sonido e iluminación?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, siempre: sonido profesional dimensionado al espacio, iluminación de pista y microfonía inalámbrica para discursos y momentos especiales. Incluye montaje, pruebas y equipo de respaldo. Solo se necesita un punto de corriente."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Te desplazas fuera de A Coruña?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, trabajo en toda Galicia: Santiago, Ferrol, Lugo, Pontevedra, Ourense y cualquier punto de la comunidad. El desplazamiento se incluye en el presupuesto cerrado."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Haces eventos en casas particulares o fincas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, habitualmente. Se adapta el equipo al espacio y se planifica con antelación el volumen, la hora de fin y la ubicación de la cabina para evitar problemas con vecinos."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué pasa si algo falla el día del evento?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Llevo equipo de respaldo y llego con horas de margen para montar y probar. En años de eventos, el plan B nunca ha tenido que improvisarse: ya estaba pensado."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Quién pincha en mi evento?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yo, Emilio (DJ Ponte). No soy una agencia: la persona que responde tus mensajes, prepara tu música y pincha en tu fiesta es la misma. Una boda o una fiesta no se delega."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Emites factura?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, factura con IVA y seguro de responsabilidad civil. Documentación disponible para empresas y espacios que la requieran."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Dónde puedo verte pinchar antes de contratar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En mis sesiones residentes en Bellini Rooftop (A Coruña) y en el Instagram @emilioponte, donde publico vídeos reales de bodas, cumpleaños y sesiones de vinilo."
+   }
+  }
+ ]
+}</script>
+</head>
+<body>
+<header class="header">
+  <nav class="nav container" aria-label="Principal">
+    <a href="/" class="logo">DJ <span>PONTE</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-label="Abrir menú">&#9776;</button>
+    <ul class="nav__menu">
+      <li><a href="/bodas/">Bodas</a></li><li><a href="/vinilo/">Vinyl Set</a></li><li><a href="/cumpleanos/">Cumpleaños</a></li><li><a href="/eventos-privados/">Eventos</a></li><li><a href="/empresas/">Empresas</a></li><li><a href="/vermu-tardeo/">Vermú</a></li><li><a href="/preguntas-frecuentes/">FAQ</a></li>
+      <li><a class="btn btn--wa btn--small" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> WhatsApp</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+
+<div class="pv-page active" data-page="home">
+<section class="hero hero--dark">
+  <div class="container">
+    <div class="hero__grid"><div>
+      <span class="eyebrow">DJ EN A CORUÑA · GALICIA</span>
+      <h1>DJ para bodas, fiestas y eventos en A Coruña y toda <em>Galicia</em></h1>
+      <p class="lead">Soy Emilio, DJ Ponte. Mi trabajo no es poner canciones: es mirar la pista, entender qué necesita tu gente en cada momento y conseguir que nadie se quiera ir. Bodas, cumpleaños, eventos de empresa y sesiones vermú con vinilo.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar disponibilidad</a>
+        <a class="btn btn--sec" href="/contacto/">Ver si tengo libre tu fecha</a>
+      </div>
+      <p class="trust"><b>★ 5,0</b> en Google &nbsp;·&nbsp; Residente en Bellini Rooftop &nbsp;·&nbsp; Bodas, cumpleaños y empresas en toda Galicia</p>
+    </div>
+      <div class="vinyl" role="img" aria-label="Vinilo de DJ Ponte girando">
+        <div class="vinyl__disc"><div class="vinyl__label">DJ PONTE<small>VINYL</small></div></div>
+      </div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">LA DIFERENCIA</span>
+      <h2>Por qué en mis fiestas la gente <em>no se sienta</em></h2>
+      <p class="lead">Cualquiera puede darle al play a una lista de éxitos. La diferencia está en lo que pasa cuando un tema no funciona.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="feature">
+        <h3>Leo la pista, no sigo un guion</h3>
+        <p>Llevo la sesión preparada, pero la decido en directo. Si veo que un grupo de la mesa 7 se viene arriba con los 2000, tiro por ahí. Si un tema no engancha en 30 segundos, fuera. La pista manda, y mi trabajo es escucharla.</p>
+      </div>
+      <div class="feature">
+        <h3>Tu fiesta se prepara antes de tu fiesta</h3>
+        <p>Antes del evento hablamos: las canciones que no pueden faltar, las prohibidas, los momentos especiales y el tipo de público. El día D no improviso tu fiesta; improviso sobre un plan que hemos hecho juntos.</p>
+      </div>
+      <div class="feature">
+        <h3>Sonido e iluminación que no fallan</h3>
+        <p>Equipo propio profesional, dimensionado para el espacio: no es lo mismo sonorizar un salón de pazo que una terraza. Llego con tiempo, pruebo todo y llevo respaldo. Si algo puede fallar, ya he pensado qué hacer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">SERVICIOS</span>
+      <h2>Elige tu fiesta</h2>
+    </div>
+    <div class="grid grid--3">
+      <a class="card" href="/bodas/">
+        <h3>Bodas</h3>
+        <p>Del aperitivo a la barra libre, con un plan musical pensado para cada momento del día.</p>
+        <span class="price">DESDE 590 €</span>
+        <span class="card__link">Ver bodas →</span>
+      </a>
+      <a class="card" href="/vinilo/">
+        <h3>Vinyl Set Aperitivo</h3>
+        <p>Música en vinilo de verdad, pinchada en directo con platos Akiyama. El aperitivo que tus invitados van a grabar.</p>
+        <span class="price">EL DIFERENCIAL</span>
+        <span class="card__link">Descubrir el vinyl set →</span>
+      </a>
+      <a class="card" href="/cumpleanos/">
+        <h3>Cumpleaños</h3>
+        <p>30, 40, 50… La música de tu década mezclada con la de ahora. 3-4 horas de fiesta.</p>
+        <span class="price">DESDE 300 €</span>
+        <span class="card__link">Ver cumpleaños →</span>
+      </a>
+      <a class="card" href="/eventos-privados/">
+        <h3>Eventos privados</h3>
+        <p>Fiestas en casas, fincas y celebraciones que no encajan en ninguna etiqueta. Tú pones la ocasión.</p>
+        <span class="price">DESDE 300 €</span>
+        <span class="card__link">Ver eventos privados →</span>
+      </a>
+      <a class="card" href="/empresas/">
+        <h3>Empresas</h3>
+        <p>Cenas de empresa, Navidad, inauguraciones. Con factura, seguro y microfonía para los discursos.</p>
+        <span class="price">PRESUPUESTO EN 24 H</span>
+        <span class="card__link">Ver eventos de empresa →</span>
+      </a>
+      <a class="card" href="/vermu-tardeo/">
+        <h3>Sesión vermú &amp; tardeo</h3>
+        <p>Vinilo, groove y deep house para terrazas y locales. Como mis sesiones residentes en Bellini Rooftop.</p>
+        <span class="price">DE DÍA</span>
+        <span class="card__link">Ver sesiones vermú →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">EL DIFERENCIAL</span>
+        <h2>Vinyl Set: el aperitivo que tus invitados van a <em>fotografiar</em></h2>
+        <p class="lead">Dos platos Akiyama DJ-2000, una maleta de vinilos y música elegida disco a disco: deep house, funk, soul y clásicos que todo el mundo reconoce pero nadie esperaba escuchar en vinilo.</p>
+        <p class="lead">No es hilo musical. Es un DJ pinchando discos de verdad delante de tus invitados mientras toman el aperitivo. La gente se acerca, pregunta, hace fotos. Es de esas cosas que convierten un evento bonito en un evento del que se habla.</p>
+        <div class="btn-row">
+          <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20me%20interesa%20el%20Vinyl%20Set%20para%20mi%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Quiero el vinyl set</a>
+          <a class="btn btn--sec" href="/vinilo/">Ver más sobre el vinilo</a>
+        </div>
+      </div>
+      <div class="vinyl" role="img" aria-label="Vinilo girando">
+        <div class="vinyl__disc"><div class="vinyl__label">DJ PONTE<small>VINYL</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">CÓMO TRABAJO</span>
+      <h2>De tu primer mensaje a la pista llena</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Me escribes por WhatsApp</h3>
+        <p>Me cuentas qué celebras, dónde y cuándo. Te confirmo si tengo la fecha libre y te paso precio cerrado, normalmente en menos de 24 horas.</p>
+      </div>
+      <div class="step">
+        <h3>Preparamos tu fiesta</h3>
+        <p>Hablamos por teléfono o nos vemos. Repasamos los momentos del evento, tus imprescindibles, tus prohibidas y el perfil de los invitados.</p>
+      </div>
+      <div class="step">
+        <h3>Precio cerrado, sin sorpresas</h3>
+        <p>Te paso por escrito qué incluye: horas, equipo, montaje, desplazamiento. Lo que firmamos es lo que pagas.</p>
+      </div>
+      <div class="step">
+        <h3>El día del evento</h3>
+        <p>Llego con tiempo de sobra, monto, pruebo el sonido y desaparezco hasta que empieza la música. A partir de ahí, mi único trabajo es tu pista.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">RESEÑAS REALES DE GOOGLE</span>
+      <h2>Lo que dicen los que ya han bailado conmigo</h2>
+    </div>
+    <figure style="margin:0 0 30px"><img class="photo" src="data:image/webp;base64,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" alt="DJ Ponte pinchando en un evento privado en A Coruña con invitadas sonriendo junto a la cabina" width="760" height="760" loading="lazy" style="max-width:680px"></figure>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí el texto de una reseña real de tu perfil de Google."</blockquote>
+        <figcaption>— Nombre, boda en [lugar], 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real (idealmente de un cumpleaños)."</blockquote>
+        <figcaption>— Nombre, 40 cumpleaños, A Coruña</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real (idealmente de empresa o vermú)."</blockquote>
+        <figcaption>— Nombre, evento de empresa, 2025</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">PACK DIGITAL · 150 €</span>
+        <h2>Tu fiesta, también en el móvil de tus invitados</h2>
+        <p class="lead">Por 150 € añade a cualquier servicio el pack digital de DJ Ponte:</p>
+        <div class="feature" style="margin-bottom:22px">
+          <h3>App de peticiones en directo</h3>
+          <p>Tus invitados escanean un QR y me piden canciones desde su móvil. Yo decido cuáles entran y cuándo — la pista, siempre protegida.</p>
+        </div>
+        <div class="feature">
+          <h3>Álbum compartido del evento</h3>
+          <p>Todas las fotos y vídeos que haga la gente, en un mismo álbum privado. Al día siguiente lo tienes todo, sin perseguir a nadie por WhatsApp.</p>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">ZONA DE TRABAJO</span>
+        <h2>¿Dónde pincho?</h2>
+        <p class="lead">Trabajo en toda Galicia, con base en A Coruña. La mayoría de mis eventos son en A Coruña ciudad, Oleiros, Sada, Betanzos, Santiago de Compostela, Ferrol y Carballo, pero me muevo a cualquier punto de Galicia — y si la fiesta lo merece, más allá.</p>
+        <p class="lead">El desplazamiento va incluido en el presupuesto cerrado: sin sustos de última hora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">DUDAS RÁPIDAS</span>
+      <h2>Preguntas rápidas antes de escribirme</h2>
+    </div>
+    <details>
+      <summary>¿Cuánto cuesta un DJ en A Coruña?</summary>
+      <p>Mis cumpleaños y fiestas privadas parten de 300 € (3-4 horas). Las bodas, desde 590 € solo fiesta o 850 € el día completo. Siempre con precio cerrado por escrito.</p>
+    </details>
+    <details>
+      <summary>¿Con cuánta antelación tengo que reservar?</summary>
+      <p>Las bodas se reservan con 6-12 meses; los sábados de mayo a octubre vuelan. Cumpleaños y eventos, con 2-4 semanas suele bastar. Pregunta tu fecha: es gratis y te respondo en el día.</p>
+    </details>
+    <details>
+      <summary>¿Llevas tu propio equipo?</summary>
+      <p>Sí: sonido, iluminación y respaldo. Solo necesito un enchufe y un sitio donde montar.</p>
+    </details>
+    <details>
+      <summary>¿Aceptas peticiones de los invitados?</summary>
+      <p>Sí, con criterio: las peticiones entran cuando suman a la pista, no cuando la rompen. Con el pack digital, además, pueden pedirlas desde el móvil.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>Tu fecha solo la puede tener <em>una</em> fiesta</h2>
+    <p>Trabajo solo, sin sustitutos ni “DJ asignado”: si reservas a DJ Ponte, el que pincha soy yo. Eso significa que cada fecha es única — y las buenas se van rápido.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar mi fecha por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="bodas">
+<section class="hero ">
+  <div class="container">
+    <div>
+      <span class="eyebrow">BODAS · A CORUÑA Y GALICIA</span>
+      <h1>DJ para bodas en A Coruña y <em>Galicia</em></h1>
+      <p class="lead">La música es lo que tus invitados van a recordar cuando ya no se acuerden del menú. Yo me encargo de que el recuerdo sea una pista llena hasta que el pazo cierre — y de todo lo que pasa antes para llegar ahí.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20una%20BODA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar mi fecha de boda</a>
+        <a class="btn btn--sec" href="#momentos">Ver qué incluye</a>
+      </div>
+      <p class="trust"><b>★ 5,0</b> en Google &nbsp;·&nbsp; Bodas en pazos y fincas de toda Galicia</p>
+    </div>
+  </div>
+</section>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">LO IMPORTANTE</span>
+      <h2>Lo que de verdad contratas cuando contratas un DJ de boda</h2>
+      <p class="lead">Una boda no es una sesión de cuatro horas: son ocho o diez horas de momentos distintos que necesitan música distinta. El error más común es pensar solo en la barra libre.</p>
+      <p class="lead">El aperitivo necesita un volumen que deje conversar. El banquete necesita una banda sonora que acompañe sin molestar — y entradas, corte de tarta o sorpresas que suenen perfectas a la primera, porque no hay segunda toma. Y la fiesta necesita a alguien que conozca a tu gente antes de que suene el primer tema. Mi trabajo cubre las diez horas, no solo las cuatro últimas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="momentos">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">TU BODA, POR MOMENTOS</span>
+      <h2>Así suena tu boda de principio a fin</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="card">
+        <h3>Aperitivo · Vinyl Set</h3>
+        <p>Mientras tomáis el cóctel, pincho vinilos de verdad en mis platos Akiyama: deep house suave, funk, soul, clásicos elegantes. Volumen de conversación, estética de otra época. Los invitados se acercan a mirar los discos, preguntan, hacen fotos. No hay aperitivo de catering capaz de competir con eso.</p>
+        <a class="card__link" href="/vinilo/">Ver el Vinyl Set →</a>
+      </div>
+      <div class="card">
+        <h3>Banquete · La banda sonora invisible</h3>
+        <p>Durante la comida la música acompaña: ni protagonista ni ausente. Y cuando llegan los momentos importantes — vuestra entrada, el corte de tarta, ese vídeo sorpresa — todo está ensayado, con microfonía lista y los tiempos hablados con el maître y el fotógrafo.</p>
+      </div>
+      <div class="card">
+        <h3>Primer baile · Vuestro momento, sin fallos</h3>
+        <p>La canción que elijáis, en la versión exacta que queráis, al volumen justo, con la entrada coordinada. Lo preparamos juntos en la reunión previa y lo dejo probado esa misma tarde.</p>
+      </div>
+      <div class="card">
+        <h3>Barra libre · Donde me dejo la piel</h3>
+        <p>Aquí leer la pista lo es todo. Mezclo lo que funciona con tu gente concreta: los himnos que pediste, los prohibidos que vetaste, la década de tus padres y la de tus amigos. Si un tema no llena, lo corto. Si la pista pide más, no miro el reloj: miro la pista.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PREPARACIÓN</span>
+      <h2>Tu boda no se improvisa <em>(se improvisa sobre lo preparado)</em></h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="feature">
+        <h3>Reunión previa, contigo</h3>
+        <p>Nos vemos o hacemos videollamada uno o dos meses antes. Repasamos el día completo: horarios, momentos especiales, estilo musical, imprescindibles y prohibidas. Salís con la tranquilidad de que la música ya no es una preocupación.</p>
+      </div>
+      <div class="feature">
+        <h3>Vuestro formulario de canciones</h3>
+        <p>Os paso un formulario sencillo donde apuntáis los temas que sí o sí, los que ni se os ocurra, y las canciones con historia. Todo eso acaba sonando en el momento adecuado.</p>
+      </div>
+      <div class="feature">
+        <h3>Coordinación con proveedores</h3>
+        <p>Hablo con el espacio, el catering y el fotógrafo antes del día B. Los tiempos de la música marcan el ritmo de la boda, y que todos vayamos a una se nota — sobre todo cuando no se nota.</p>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:36px">Y el equipo, a la altura del sitio: no es lo mismo un salón de pazo con techos de piedra que una carpa en un jardín. Dimensiono el sonido para tu espacio, con respaldo, iluminación de pista y microfonía inalámbrica para discursos. Llego horas antes, monto, pruebo y resuelvo. <strong>El plan B existe antes de necesitarlo.</strong></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PRECIOS</span>
+      <h2>Precios claros desde el primer mensaje</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card price-card">
+        <h3>Fiesta</h3>
+        <p class="from">590 € <small>desde</small></p>
+        <p>Barra libre completa: sesión de baile, sonido, iluminación de pista, montaje y desplazamiento en la zona de A Coruña.</p>
+      </div>
+      <div class="card price-card">
+        <h3>Día completo</h3>
+        <p class="from">850 € <small>desde</small></p>
+        <p>Aperitivo + banquete + fiesta: música de todo el día, microfonía para discursos, coordinación de momentos especiales y todo lo anterior.</p>
+      </div>
+      <div class="card price-card">
+        <h3>Extras que suman</h3>
+        <p class="from">+ <small>opcionales</small></p>
+        <p>Vinyl Set en el aperitivo · Pack digital (app de peticiones + álbum compartido, 150 €) · Horas extra si la pista no quiere irse a casa.</p>
+      </div>
+    </div>
+    <p class="micro">Todos los presupuestos son cerrados y por escrito. Lo que firmamos es lo que pagas.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20presupuesto%20para%20mi%20BODA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir presupuesto para mi boda</a>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PAREJAS REALES</span>
+      <h2>Novios que ya pasaron por esto</h2>
+    </div>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí una reseña real de unos novios (Google)."</blockquote>
+        <figcaption>— Nombres, boda en [pazo/finca], 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real de boda."</blockquote>
+        <figcaption>— Nombres, boda en [lugar], 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real de boda."</blockquote>
+        <figcaption>— Nombres, boda en [lugar], 2024</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section>
+<section class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">FAQ DE BODAS</span>
+      <h2>Lo que los novios siempre me preguntan</h2>
+    </div>
+    <details>
+      <summary>¿Hasta qué hora puedes pinchar?</summary>
+      <p>Hasta que el espacio lo permita. El presupuesto incluye unas horas pactadas y, si la fiesta sigue, las horas extra están acordadas de antemano — sin negociar a las 3 de la mañana.</p>
+    </details>
+    <details>
+      <summary>¿Pinchas la música de la ceremonia?</summary>
+      <p>Sí. Si la ceremonia es civil en el mismo espacio, sonorizo entrada, lecturas y salida con los temas que elijáis.</p>
+    </details>
+    <details>
+      <summary>¿Y si llueve? (estamos en Galicia)</summary>
+      <p>Lo hablamos con el espacio en la coordinación previa: siempre hay un plan B de ubicación para el equipo, decidido antes del día B, no durante.</p>
+    </details>
+    <details>
+      <summary>¿Atiendes peticiones de los invitados en la barra libre?</summary>
+      <p>Sí, con filtro profesional: la petición entra si suma a la pista. Vuestra lista de "prohibidas" es ley — nadie os va a colar esa canción que odiáis ni pagando.</p>
+    </details>
+    <details>
+      <summary>¿Cómo reservamos la fecha?</summary>
+      <p>Con una señal y un acuerdo por escrito con todo detallado. A partir de ahí, la fecha es vuestra y dejo de ofrecerla.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>Los sábados de mayo a octubre <em>vuelan</em></h2>
+    <p>Solo hago una boda por día, y la temporada alta se reserva con 6-12 meses. Pregunta tu fecha hoy: te respondo en menos de 24 horas y el presupuesto no compromete a nada.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20una%20BODA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar mi fecha por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="vinilo">
+<section class="hero hero--dark">
+  <div class="container">
+    <div class="hero__grid"><div>
+      <span class="eyebrow">VINYL SET · APERITIVOS Y EVENTOS PREMIUM</span>
+      <h1>Música en <em>vinilo</em> para aperitivos de boda y eventos en Galicia</h1>
+      <p class="lead">Dos platos Akiyama DJ-2000, una maleta de discos elegidos uno a uno y un DJ pinchando vinilo de verdad delante de tus invitados. No es ambientación: es el momento del que todos hablan después.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20me%20interesa%20el%20VINYL%20SET%20para%20mi%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Quiero un vinyl set</a>
+        <a class="btn btn--sec" href="#como">Ver cómo funciona</a>
+      </div>
+      
+    </div>
+      <div class="vinyl" role="img" aria-label="Vinilo de DJ Ponte girando">
+        <div class="vinyl__disc"><div class="vinyl__label">DJ PONTE<small>VINYL</small></div></div>
+      </div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">EL CONCEPTO</span>
+      <h2>Por qué el vinilo cambia un aperitivo</h2>
+      <p class="lead">Un aperitivo con hilo musical es un aperitivo más. Un aperitivo con un DJ pinchando discos es un espectáculo discreto: la gente se acerca a la cabina, mira las portadas, pregunta por los temas, graba stories. El vinilo tiene algo que el streaming no tiene — se ve, gira, se elige a mano — y eso convierte la música en parte de la experiencia, no en el fondo.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="feature">
+        <h3>El sonido</h3>
+        <p>Deep house elegante, funk, soul, bossa, clásicos del groove. Música que los de 30 y los de 70 reconocen y disfrutan, a un volumen que deja conversar.</p>
+      </div>
+      <div class="feature">
+        <h3>La estética</h3>
+        <p>Los platos, la maleta de vinilos abierta, los slipmats de DJ Ponte. La cabina queda preciosa en fotos — pregúntale a tu fotógrafo.</p>
+      </div>
+      <div class="feature">
+        <h3>Dónde encaja</h3>
+        <p>Aperitivos y cócteles de boda · recepciones de empresa · inauguraciones · eventos premium en pazos, terrazas, jardines y rooftops. Como mis sesiones residentes en Bellini Rooftop (A Coruña).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="como">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">FORMATO</span>
+      <h2>Cómo funciona</h2>
+      <p class="lead">Sesión de 1,5 a 3 horas durante el aperitivo o cóctel. Llevo platos, mezclador, sonido dimensionado al espacio y la selección de discos preparada para tu público. Puede contratarse solo, o como extra dentro de una boda o evento completo conmigo.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20precio%20del%20VINYL%20SET"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar precio del vinyl set</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">EVENTOS REALES</span>
+      <h2>Aperitivos que la gente recuerda</h2>
+    </div>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí una reseña real que mencione el aperitivo o el vinilo."</blockquote>
+        <figcaption>— Nombre, boda en [lugar], 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real (evento premium o empresa)."</blockquote>
+        <figcaption>— Nombre, evento, 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real (vermú o Bellini)."</blockquote>
+        <figcaption>— Nombre, A Coruña, 2025</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section><section class="cta-final">
+  <div class="container">
+    <h2>Dale a tus invitados algo que <em>no han visto</em></h2>
+    <p>Cuéntame fecha, lugar y tipo de evento, y te paso formato y precio cerrado del Vinyl Set en menos de 24 horas.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20me%20interesa%20el%20VINYL%20SET%20para%20mi%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar disponibilidad</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="cumpleanos">
+<section class="hero ">
+  <div class="container">
+    <div>
+      <span class="eyebrow">CUMPLEAÑOS · A CORUÑA Y GALICIA</span>
+      <h1>DJ para fiestas de <em>cumpleaños</em> en A Coruña</h1>
+      <p class="lead">Los cumpleaños son mis fiestas favoritas, y lo digo en serio: nadie baila como alguien rodeado de toda su gente celebrando que cumple años. Mi trabajo es darle a esa noche la banda sonora que se merece — la de tu década y la de ahora, bien mezcladas.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20un%20DJ%20para%20un%20CUMPLEA%C3%91OS"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar mi fecha</a>
+        <a class="btn btn--sec" href="#precio">Ver precios</a>
+      </div>
+      <p class="trust"><b>★ 5,0</b> en Google &nbsp;·&nbsp; Desde 300 € &nbsp;·&nbsp; 3-4 horas de sesión</p>
+    </div>
+  </div>
+</section>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">EL CONCEPTO</span>
+      <h2>La música de <em>tu</em> vida, no una lista de éxitos</h2>
+      <p class="lead">Un 40 cumpleaños no se pincha igual que un 30, y un 50 tiene su propia ciencia. La fiesta funciona cuando suenan los temas que marcaron a esa persona y a su gente: el verano del instituto, la canción del Erasmus, el himno de la pandilla — mezclados con lo que llena pistas hoy, para que los sobrinos también bailen.</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3>Cumples 30</h3>
+        <p>Los 2010 que viviste en la facultad, el reggaetón de tus veranos y los himnos de ahora. Energía sin pausa.</p>
+      </div>
+      <div class="card">
+        <h3>Cumples 40</h3>
+        <p>Los 90 y 2000 en su punto justo de nostalgia: la ruta de bachillerato, los primeros festivales, y la sorpresa de que esos temas siguen llenando pistas.</p>
+      </div>
+      <div class="card">
+        <h3>Cumples 50 (o más)</h3>
+        <p>De los 80 al groove, pasando por todo lo que se bailaba cuando salir era salir. Y oye: nadie cierra una pista como la generación que aprendió a bailar sin móvil en la mano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">QUÉ INCLUYE</span>
+      <h2>Tu cumpleaños con DJ Ponte</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="feature">
+        <h3>3-4 horas de sesión en directo</h3>
+        <p>No es una lista en aleatorio: es una sesión mezclada y decidida en directo, leyendo a tu gente. Si tu cuadrilla se viene arriba con algo inesperado, por ahí seguimos.</p>
+      </div>
+      <div class="feature">
+        <h3>Sonido e iluminación incluidos</h3>
+        <p>Equipo profesional adaptado al local, al bajo o a la casa. Luz de fiesta para que el salón de siempre parezca otro sitio. Montaje y pruebas antes de que llegue nadie.</p>
+      </div>
+      <div class="feature">
+        <h3>Tus imprescindibles y tus prohibidas</h3>
+        <p>Antes de la fiesta me pasas las canciones que tienen que sonar y las que están vetadas. Tu fiesta, tus reglas — yo pongo el criterio para ordenarlas.</p>
+      </div>
+      <div class="feature">
+        <h3>Momentos especiales</h3>
+        <p>¿Tarta con bengalas y su canción? ¿Vídeo sorpresa de los amigos? ¿Entrada triunfal? Me lo cuentas y lo coordino con micro y música, que esos momentos solo pasan una vez.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="precio">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PRECIO</span>
+      <h2>Desde 300 €, precio cerrado</h2>
+      <p class="lead">La fiesta de cumpleaños estándar — 3 a 4 horas de sesión, sonido, iluminación, montaje y desplazamiento en la zona de A Coruña — parte de 300 €. Extras opcionales: horas adicionales, pack digital con app de peticiones y álbum compartido (150 €), o un Vinyl Set para el aperitivo si la celebración empieza de día.</p>
+      <p class="lead">Te paso el precio exacto por WhatsApp en cuanto me digas fecha, lugar y horas. Por escrito y sin sorpresas.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20precio%20para%20un%20CUMPLEA%C3%91OS"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir mi precio exacto</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">CUMPLEAÑOS REALES</span>
+      <h2>Fiestas que ya sonaron</h2>
+    </div>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí una reseña real de un cumpleaños (Google)."</blockquote>
+        <figcaption>— Nombre, 40 cumpleaños, A Coruña</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real de cumpleaños."</blockquote>
+        <figcaption>— Nombre, 50 cumpleaños, 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real de fiesta privada."</blockquote>
+        <figcaption>— Nombre, fiesta, 2025</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section>
+<section class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">DUDAS</span>
+      <h2>Lo que me preguntan antes de reservar</h2>
+    </div>
+    <details>
+      <summary>¿Con cuánto tiempo reservo?</summary>
+      <p>Para cumpleaños, con 2-4 semanas suele llegar — pero los sábados son los sábados: si tu fecha es fin de semana, escríbeme en cuanto la tengas.</p>
+    </details>
+    <details>
+      <summary>¿Haces fiestas en casas particulares?</summary>
+      <p>Sí, muchas. Adapto el equipo al espacio y hablamos antes del tema vecinos y hora de fin para que la única sorpresa de la noche sea la tarta.</p>
+    </details>
+    <details>
+      <summary>¿Pueden pedir canciones los invitados?</summary>
+      <p>Claro. Y si añades el pack digital, las piden desde el móvil con un QR y yo las voy metiendo cuando encajan en la pista.</p>
+    </details>
+    <details>
+      <summary>¿Y si somos pocos?</summary>
+      <p>He hecho cumpleaños de 25 personas que acabaron mejor que bodas de 200. La fiesta la hace la gente; yo me encargo de que la música esté a su altura.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>Solo se cumplen 40 <em>una vez</em></h2>
+    <p>Dime la fecha y te confirmo disponibilidad y precio hoy mismo. Y si todavía estás dándole vueltas a si merece la pena un DJ para tu cumpleaños: pregúntale a cualquiera que haya tenido uno.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20un%20DJ%20para%20un%20CUMPLEA%C3%91OS"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar mi fecha por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="eventos-privados">
+<section class="hero ">
+  <div class="container">
+    <div>
+      <span class="eyebrow">EVENTOS PRIVADOS · A CORUÑA Y GALICIA</span>
+      <h1>DJ para fiestas y <em>eventos privados</em> en A Coruña</h1>
+      <p class="lead">Aniversarios, reencuentros, fiestas en casa, comuniones con padres que también quieren bailar, despedidas con clase. Si tiene gente y merece buena música, es mi terreno.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20un%20DJ%20para%20un%20EVENTO%20PRIVADO"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Contar mi plan</a>
+        <a class="btn btn--sec" href="#como">Ver cómo funciona</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PARA QUÉ ME LLAMAN</span>
+      <h2>Fiestas que no encajan en ninguna casilla</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3>Fiestas en casas y fincas</h3>
+        <p>Tu jardín, tu bajo, la finca de la familia. Llevo el sonido dimensionado al espacio — y la experiencia de saber cuándo el volumen es fiesta y cuándo es problema con los vecinos.</p>
+      </div>
+      <div class="card">
+        <h3>Aniversarios y reencuentros</h3>
+        <p>Bodas de plata, 25 años de la pandilla, comidas familiares que acaban en baile. La música que une tres generaciones existe, pero hay que saber ordenarla.</p>
+      </div>
+      <div class="card">
+        <h3>Celebraciones premium</h3>
+        <p>Cenas privadas, fiestas en terrazas y rooftops, eventos donde la música tiene que ser tan buena como el catering. Aquí es donde el Vinyl Set brilla: discos de verdad para un cóctel de verdad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">TRATO DIRECTO</span>
+      <h2>Hablas conmigo, pincha el mismo</h2>
+      <p class="lead">No soy una agencia que te asigna "un DJ disponible". El que responde el WhatsApp, el que prepara tu sesión y el que pincha en tu fiesta somos la misma persona. Eso significa dos cosas: que lo que hablamos se cumple, y que el día del evento ya nos conocemos.</p>
+    </div>
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
+      <div class="step">
+        <h3>Me cuentas el plan</h3>
+        <p>Qué celebras, cuánta gente, qué edades, dónde. Con eso ya te digo si encajo y cuánto cuesta.</p>
+      </div>
+      <div class="step">
+        <h3>Preparamos la música</h3>
+        <p>Tus imprescindibles, tus prohibidas, el ambiente que buscas: ¿fiesta hasta el final o cena con buena música? Las dos cosas se preparan distinto.</p>
+      </div>
+      <div class="step">
+        <h3>La fiesta</h3>
+        <p>Llego antes, monto, pruebo y a partir de ahí mi trabajo es leer a tu gente. La sesión la decide la pista, no una lista cerrada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">CONDICIONES</span>
+      <h2>Todo incluido, sin letra pequeña</h2>
+      <p class="lead">Sonido profesional adaptado al espacio, iluminación si la fiesta la pide, montaje, desplazamiento y respaldo técnico. Presupuesto cerrado por escrito: lo que acordamos es lo que pagas.</p>
+      <p class="lead"><strong>¿Cuánto cuesta?</strong> Las fiestas privadas parten de 300 € (3-4 horas de sesión, equipo incluido) en la zona de A Coruña. El precio final depende de horas, espacio y extras como el Vinyl Set o el pack digital. Lo sabes antes de decidir, no después.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20precio%20para%20una%20FIESTA%20PRIVADA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir precio para mi fiesta</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">FIESTAS REALES</span>
+      <h2>Gente que montó la fiesta en su casa</h2>
+    </div>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí una reseña real de un evento privado (Google)."</blockquote>
+        <figcaption>— Nombre, fiesta privada, 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real."</blockquote>
+        <figcaption>— Nombre, aniversario, 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real."</blockquote>
+        <figcaption>— Nombre, fiesta en finca, 2024</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section>
+<section class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">DUDAS TÍPICAS</span>
+      <h2>Preguntas de fiestas privadas</h2>
+    </div>
+    <details>
+      <summary>¿Haces fiestas pequeñas, de 20-30 personas?</summary>
+      <p>Sí. Una buena fiesta no depende del número de invitados, depende de que la música sea la correcta para ESA gente. Algunas de mis mejores pistas han sido salones de casa.</p>
+    </details>
+    <details>
+      <summary>¿Qué pasa con los vecinos y el ruido?</summary>
+      <p>Lo hablamos antes: hora de fin realista, volumen por franjas y orientación de los altavoces. Llevo años haciendo fiestas en viviendas sin un solo problema — la clave es planificarlo, no confiar en la suerte.</p>
+    </details>
+    <details>
+      <summary>¿Puedo mezclar Vinyl Set y fiesta?</summary>
+      <p>Es mi combinación favorita: vinilo durante la comida o el cóctel, y sesión de baile después. Dos ambientes, una sola contratación.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>Las buenas fiestas también <em>se reservan</em></h2>
+    <p>Cuéntame el plan aunque aún esté a medias: te oriento con horarios, espacio y música, y te paso precio cerrado. Sin compromiso y en menos de 24 horas.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20un%20DJ%20para%20un%20EVENTO%20PRIVADO"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar disponibilidad</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="empresas">
+<section class="hero ">
+  <div class="container">
+    <div>
+      <span class="eyebrow">EMPRESAS · A CORUÑA Y GALICIA</span>
+      <h1>DJ para <em>eventos de empresa</em> en A Coruña y Galicia</h1>
+      <p class="lead">Cenas de empresa, fiestas de Navidad, inauguraciones, aniversarios de compañía. Música profesional con todo lo que un departamento necesita para contratar tranquilo: factura, seguro, puntualidad y un solo interlocutor de principio a fin.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20presupuesto%20para%20un%20EVENTO%20DE%20EMPRESA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir presupuesto</a>
+        <a class="btn btn--sec" href="#confianza">Ver cómo trabajo</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">TIPOS DE EVENTO</span>
+      <h2>Eventos de empresa que ya he sonorizado</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3>Cenas de empresa y Navidad</h3>
+        <p>El evento corporativo más delicado: pasar de la cena tranquila al baile sin que se note la costura, con un público que va del becario al director general. Mi especialidad es exactamente esa transición.</p>
+      </div>
+      <div class="card">
+        <h3>Inauguraciones y presentaciones</h3>
+        <p>Apertura de local, presentación de producto, aniversario de marca. Aquí el Vinyl Set funciona especialmente bien: música en vinilo en directo da una imagen premium que un altavoz con una playlist no da — y los asistentes lo fotografían, que es justo lo que tu marca quiere.</p>
+      </div>
+      <div class="card">
+        <h3>Team buildings y celebraciones</h3>
+        <p>Comidas que acaban en fiesta, celebraciones de objetivos, despedidas de compañeros. Formato flexible: desde 2 horas de ambientación a noche completa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="confianza">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PARA TU DEPARTAMENTO</span>
+      <h2>Contratar sin sorpresas</h2>
+    </div>
+    <div class="grid grid--2">
+      <div class="feature">
+        <h3>Factura y seguro de responsabilidad civil</h3>
+        <p>Trabajo como profesional dado de alta: factura con IVA y seguro RC. La documentación que tu administración pida, la tiene antes del evento.</p>
+      </div>
+      <div class="feature">
+        <h3>Microfonía para discursos</h3>
+        <p>Si hay palabras del CEO, entrega de premios o presentaciones, llevo microfonía inalámbrica y me encargo del sonido de la parte institucional, no solo de la fiesta. Un solo proveedor para todo el audio del evento.</p>
+      </div>
+      <div class="feature">
+        <h3>Un interlocutor, respuesta en 24 h</h3>
+        <p>Hablas conmigo directamente: presupuesto cerrado por escrito en 24 horas, confirmaciones rápidas y cero intermediarios. Organizar el evento de empresa suele ser "el marrón de alguien" — mi trabajo es que la música sea la parte fácil.</p>
+      </div>
+      <div class="feature">
+        <h3>Música apropiada para público mixto</h3>
+        <p>Un evento de empresa tiene 25 y 60 años en la misma sala, y mañana todos vuelven a la oficina. Sé qué poner, qué no poner y cuándo subir la intensidad sin que nadie se incomode. Elegancia primero, fiesta cuando toca.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">FORMATOS</span>
+      <h2>Formatos habituales</h2>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3>Ambientación + fiesta</h3>
+        <p>Música de fondo durante la recepción y la cena, microfonía para los discursos y sesión de baile al final. El formato clásico de cena de Navidad.</p>
+      </div>
+      <div class="card">
+        <h3>Vinyl Set corporativo</h3>
+        <p>Sesión en vinilo durante un cóctel, recepción o inauguración. Imagen premium, volumen de conversación y un elemento visual del que se habla. De 1,5 a 3 horas.</p>
+      </div>
+      <div class="card">
+        <h3>Solo fiesta</h3>
+        <p>La empresa pone la cena, yo pongo el después. Sesión de baile con sonido e iluminación completos.</p>
+      </div>
+    </div>
+    <p class="micro">Presupuesto según horas, espacio y formato. Siempre cerrado y por escrito.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20presupuesto%20para%20un%20EVENTO%20DE%20EMPRESA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir presupuesto en 24 h</a>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">EMPRESAS QUE YA HAN CONFIADO</span>
+      <h2>Experiencia que se puede comprobar</h2>
+    </div>
+    <p class="edit-note">✏️ EDITAR ANTES DE PUBLICAR: sustituye estas reseñas de ejemplo por reseñas reales copiadas de tu perfil de Google (pide permiso a los autores).</p>
+    <div class="grid grid--3">
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí una reseña real de un evento corporativo (Google)."</blockquote>
+        <figcaption>— Nombre, empresa, 2025</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Pega aquí otra reseña real de empresa."</blockquote>
+        <figcaption>— Nombre, cena de Navidad, 2024</figcaption>
+      </figure>
+      <figure class="review">
+        <div class="stars" aria-label="5 estrellas">★★★★★</div>
+        <blockquote>"Residente en Bellini Rooftop (A Coruña) y DJ habitual de bodas y eventos en los principales espacios de Galicia."</blockquote>
+        <figcaption>— DJ Ponte</figcaption>
+      </figure></div>
+    <a class="google-link" href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a>
+  </div>
+</section>
+<section class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">FAQ EMPRESAS</span>
+      <h2>Preguntas habituales de empresas</h2>
+    </div>
+    <details>
+      <summary>¿Emites factura?</summary>
+      <p>Sí, con IVA y todos los datos fiscales. También contrato por escrito si vuestra administración lo requiere.</p>
+    </details>
+    <details>
+      <summary>¿Trabajas con espacios y caterings concretos?</summary>
+      <p>Trabajo en cualquier espacio de Galicia y coordino directamente con el local y el catering los horarios, el montaje y las necesidades técnicas. Vosotros solo tenéis un interlocutor: yo.</p>
+    </details>
+    <details>
+      <summary>¿Puedes sonorizar también los discursos y premios?</summary>
+      <p>Sí: microfonía inalámbrica, música de entrega de premios y coordinación de los tiempos con quien presente. El audio institucional y el festivo, con el mismo proveedor.</p>
+    </details>
+    <details>
+      <summary>¿Con cuánta antelación reservamos?</summary>
+      <p>Para fiestas de Navidad, en septiembre-octubre ya se cierran los viernes y sábados de diciembre. Para el resto, 3-4 semanas suele bastar.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>Presupuesto cerrado en <em>24 horas</em></h2>
+    <p>Mándame fecha, número aproximado de asistentes y tipo de evento, y mañana tienes el presupuesto. Si prefieres llamada, también.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20presupuesto%20para%20un%20EVENTO%20DE%20EMPRESA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Pedir presupuesto por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="vermu-tardeo">
+<section class="hero hero--dark">
+  <div class="container">
+    <div class="hero__grid"><div>
+      <span class="eyebrow">VERMÚ &amp; TARDEO · A CORUÑA</span>
+      <h1>Sesiones <em>vermú y tardeo</em> con DJ en A Coruña</h1>
+      <p class="lead">La mejor hora del día merece la mejor música: deep house, groove, funk y clásicos pinchados en vinilo mientras el sol todavía calienta la terraza. Es lo que hago como residente en Bellini Rooftop — y lo que puedo llevar a tu local o a tu celebración.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20me%20interesa%20una%20SESI%C3%93N%20VERM%C3%9A%20o%20TARDEO"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Quiero una sesión vermú</a>
+        <a class="btn btn--sec" href="https://www.instagram.com/emilioponte">Ver la sesión en Instagram</a>
+      </div>
+      
+    </div>
+      <div class="vinyl" role="img" aria-label="Vinilo de DJ Ponte girando">
+        <div class="vinyl__disc"><div class="vinyl__label">DJ PONTE<small>VINYL</small></div></div>
+      </div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">EL CONCEPTO</span>
+      <h2>Qué es una sesión vermú (y por qué funciona)</h2>
+      <p class="lead">El vermú y el tardeo son el nuevo prime time: la gente quiere salir, beber bien y bailar suave… y volver a casa a una hora decente. La música de esa franja tiene su propia ciencia — volumen que deja conversar, ritmo que sube poco a poco, temas que todo el mundo reconoce sin saber de dónde.</p>
+    </div>
+    <div class="grid grid--2">
+      <div class="feature">
+        <h3>El sonido DJ Ponte de día</h3>
+        <p>Deep house, Chicago house, groove, funk, soul y clásicos reeditados. Selección musical en vinilo con mis platos Akiyama: se escucha distinto y, sobre todo, se VE distinto.</p>
+      </div>
+      <div class="feature">
+        <h3>La progresión</h3>
+        <p>Empiezo suave con la primera caña, subo con el segundo vermut y, si la tarde acompaña, la terraza acaba bailando sin que nadie sepa exactamente cuándo empezó. Esa curva es el oficio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PARA HOSTELERÍA</span>
+      <h2>Para tu local: sesiones que llenan terrazas</h2>
+      <p class="lead">Una sesión vermú con DJ residente convierte el domingo flojo en el día fuerte de la semana. Lo he vivido desde dentro en Bellini Rooftop:</p>
+    </div>
+    <div class="grid grid--3">
+      <div class="card">
+        <h3>Residencias periódicas</h3>
+        <p>Sesión fija semanal o quincenal con identidad propia: nombre, horario, cartel y contenido para redes. La gente no viene "a un bar con música": viene a TU sesión.</p>
+      </div>
+      <div class="card">
+        <h3>Fechas especiales</h3>
+        <p>Aperturas de temporada, aniversarios del local, festivos y puentes. Una sesión puntual bien comunicada llena el aforo.</p>
+      </div>
+      <div class="card">
+        <h3>Contenido para tus redes</h3>
+        <p>Cada sesión genera material: el vinilo girando, la terraza llena, las stories de los clientes. Si quieres, te ayudo a sacarle partido — de Reels de vinilo sé un rato.</p>
+      </div>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20soy%20de%20un%20LOCAL%20y%20me%20interesan%20tus%20sesiones%20verm%C3%BA"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Hablar para mi local</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PARA CELEBRACIONES</span>
+      <h2>Para tu celebración: el vermú como fiesta</h2>
+      <p class="lead">Cada vez más gente celebra de día: comidas de cumpleaños que empiezan a la 1, preboda con vermut, aniversarios en la finca. Una sesión vermú de 2-3 horas le da a esa comida la categoría de evento — y deja a todos en casa para la cena. Combina perfecto con el <a href="/vinilo/" style="color:var(--oro)">Vinyl Set</a>: misma esencia, tu propio público.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20un%20VERM%C3%9A%20PRIVADO%20para%20mi%20celebraci%C3%B3n"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Quiero un vermú privado</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">RESIDENTE EN BELLINI ROOFTOP</span>
+      <h2>Dónde puedes verme en directo</h2>
+      <p class="lead">Sesiones residentes en Bellini Rooftop (A Coruña): vinilo, atardecer y la mejor terraza de la ciudad. Pásate y compruébalo antes de contratar — pocas cosas dan más confianza que vernos en acción.</p>
+      <div class="btn-row">
+        <a class="btn btn--sec" href="https://www.instagram.com/emilioponte" target="_blank" rel="noopener">Ver sesiones en Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">DUDAS RÁPIDAS</span>
+      <h2>Preguntas sobre sesiones de día</h2>
+    </div>
+    <details>
+      <summary>¿Cuánto dura una sesión vermú?</summary>
+      <p>Entre 2 y 4 horas, normalmente de 12:30 a 16:00 o de 18:00 a 22:00 en formato tardeo. Lo adaptamos a tu local o celebración.</p>
+    </details>
+    <details>
+      <summary>¿Pinchas solo en vinilo?</summary>
+      <p>El vinilo es la seña de identidad de mis sesiones de día, pero combino con digital cuando la sesión lo pide. El criterio musical es el mismo: groove y elegancia.</p>
+    </details>
+    <details>
+      <summary>¿Qué necesita mi local?</summary>
+      <p>Un espacio para la cabina y un enchufe. El sonido lo llevo yo si el local no tiene, dimensionado para no molestar a las mesas ni a los vecinos.</p>
+    </details>
+    <a class="google-link" href="/preguntas-frecuentes/">Ver todas las preguntas frecuentes →</a>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>El domingo que tu terraza <em>necesita</em></h2>
+    <p>Cuéntame si es para un local o una celebración y te propongo formato, horario y precio cerrado. Sin compromiso.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20me%20interesa%20una%20SESI%C3%93N%20VERM%C3%9A%20o%20TARDEO"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="preguntas-frecuentes">
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">PREGUNTAS FRECUENTES</span>
+      <h1>Todo lo que quieres saber antes de contratar un DJ</h1>
+      <p class="lead">Respuestas claras a lo que me preguntan cada semana. Si tu duda no está aquí, el WhatsApp está abierto.</p>
+    </div>
+  </div>
+</section>
+<section class="section faq" style="padding-top:0">
+  <div class="container">
+    <h2>Precios y reservas</h2>
+<details>
+  <summary>¿Cuánto cuesta contratar a DJ Ponte?</summary>
+  <p>Las fiestas de cumpleaños y eventos privados parten de 300 € (3-4 horas con sonido e iluminación incluidos). Las bodas parten de 590 € en formato solo fiesta y de 850 € en formato día completo (aperitivo, banquete y barra libre). El precio exacto depende de horas, espacio y extras, y siempre se entrega cerrado y por escrito antes de reservar.</p>
+</details>
+<details>
+  <summary>¿Cómo se reserva una fecha?</summary>
+  <p>Consultas disponibilidad por WhatsApp o formulario, recibes presupuesto cerrado en menos de 24 horas y la fecha se bloquea con una señal y un acuerdo por escrito. Desde ese momento, la fecha deja de ofrecerse a nadie más.</p>
+</details>
+<details>
+  <summary>¿Con cuánta antelación hay que reservar?</summary>
+  <p>Bodas: entre 6 y 12 meses, especialmente los sábados de mayo a octubre. Cumpleaños y eventos privados: 2-4 semanas suele ser suficiente, aunque los sábados se agotan antes. Eventos de Navidad para empresas: reservar en septiembre-octubre.</p>
+</details>
+<details>
+  <summary>¿El presupuesto compromete a algo?</summary>
+  <p>No. Pedir precio y disponibilidad es gratis y sin compromiso. El compromiso empieza cuando se firma la reserva.</p>
+</details>
+<h2>La música</h2>
+<details>
+  <summary>¿Qué estilos de música pinchas?</summary>
+  <p>De todo lo que llena una pista: éxitos actuales, los 80, 90 y 2000, reggaetón y latino, pop español, rock, y mis especialidades de día — deep house, funk, soul y groove en vinilo. La sesión se adapta al público concreto de cada evento, no al revés.</p>
+</details>
+<details>
+  <summary>¿Puedo elegir las canciones de mi evento?</summary>
+  <p>Sí. Antes del evento me pasas tus imprescindibles (las que tienen que sonar) y tus prohibidas (las que no quieres ni en versión remix). Sobre esa base, yo construyo y decido la sesión en directo leyendo la pista.</p>
+</details>
+<details>
+  <summary>¿Aceptas peticiones de los invitados durante la fiesta?</summary>
+  <p>Sí, con criterio profesional: una petición entra cuando suma a la pista. Con el pack digital (150 €), los invitados piden canciones desde el móvil escaneando un QR y yo las gestiono desde la cabina.</p>
+</details>
+<details>
+  <summary>¿Qué es el Vinyl Set?</summary>
+  <p>Una sesión de música en vinilo pinchada en directo con platos Akiyama DJ-2000, pensada para aperitivos de boda, cócteles de empresa y eventos premium. Deep house, funk, soul y clásicos a volumen de conversación, con la estética del vinilo como parte de la experiencia.</p>
+</details>
+<h2>Equipo y logística</h2>
+<details>
+  <summary>¿Llevas tu propio equipo de sonido e iluminación?</summary>
+  <p>Sí, siempre: sonido profesional dimensionado al espacio, iluminación de pista y microfonía inalámbrica para discursos y momentos especiales. Incluye montaje, pruebas y equipo de respaldo. Solo se necesita un punto de corriente.</p>
+</details>
+<details>
+  <summary>¿Te desplazas fuera de A Coruña?</summary>
+  <p>Sí, trabajo en toda Galicia: Santiago, Ferrol, Lugo, Pontevedra, Ourense y cualquier punto de la comunidad. El desplazamiento se incluye en el presupuesto cerrado.</p>
+</details>
+<details>
+  <summary>¿Haces eventos en casas particulares o fincas?</summary>
+  <p>Sí, habitualmente. Se adapta el equipo al espacio y se planifica con antelación el volumen, la hora de fin y la ubicación de la cabina para evitar problemas con vecinos.</p>
+</details>
+<details>
+  <summary>¿Qué pasa si algo falla el día del evento?</summary>
+  <p>Llevo equipo de respaldo y llego con horas de margen para montar y probar. En años de eventos, el plan B nunca ha tenido que improvisarse: ya estaba pensado.</p>
+</details>
+<h2>Confianza</h2>
+<details>
+  <summary>¿Quién pincha en mi evento?</summary>
+  <p>Yo, Emilio (DJ Ponte). No soy una agencia: la persona que responde tus mensajes, prepara tu música y pincha en tu fiesta es la misma. Una boda o una fiesta no se delega.</p>
+</details>
+<details>
+  <summary>¿Emites factura?</summary>
+  <p>Sí, factura con IVA y seguro de responsabilidad civil. Documentación disponible para empresas y espacios que la requieran.</p>
+</details>
+<details>
+  <summary>¿Dónde puedo verte pinchar antes de contratar?</summary>
+  <p>En mis sesiones residentes en Bellini Rooftop (A Coruña) y en el Instagram @emilioponte, donde publico vídeos reales de bodas, cumpleaños y sesiones de vinilo.</p>
+</details>
+
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>¿Tu pregunta no está aquí?</h2>
+    <p>Pregúntame lo que sea por WhatsApp: respondo en menos de 24 horas.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20tengo%20una%20pregunta%20antes%20de%20contratar"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Preguntar por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="contacto">
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">CONTACTO</span>
+      <h1>Consulta tu fecha: te respondo en menos de <em>24 horas</em></h1>
+      <p class="lead">Lo más rápido es el WhatsApp: me dices qué celebras, dónde y cuándo, y te confirmo disponibilidad y precio cerrado. Si prefieres formulario, también estoy.</p>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Abrir WhatsApp con DJ Ponte</a>
+      </div>
+      <p class="micro">El 90 % de mis clientes me escriben por aquí. Tres datos y arrancamos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">FORMULARIO</span>
+        <h2>¿Prefieres formulario? Un minuto y listo</h2>
+        <p class="lead">Al enviar se abre tu WhatsApp con el mensaje ya escrito: tú solo le das a enviar.</p>
+        <form id="form-contacto" class="form" data-whatsapp="34669060192">
+          <div>
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name">
+          </div>
+          <div>
+            <label for="fecha">Fecha del evento (aproximada vale)</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+          <div>
+            <label for="tipo">Tipo de evento</label>
+            <select id="tipo" name="tipo" required>
+              <option value="Boda">Boda</option>
+              <option value="Cumpleaños">Cumpleaños</option>
+              <option value="Evento privado">Evento privado</option>
+              <option value="Evento de empresa">Evento de empresa</option>
+              <option value="Vermú / Tardeo">Vermú / Tardeo</option>
+              <option value="Vinyl Set">Vinyl Set</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="plan">Cuéntame el plan (opcional)</label>
+            <textarea id="plan" name="plan" rows="4" placeholder="Lugar, nº de invitados, horario aproximado…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--wa"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Enviar mi consulta</button>
+        </form>
+      </div>
+      <div>
+        <figure style="margin:0 0 26px"><img class="photo photo--portrait" src="data:image/webp;base64,UklGRgAvAABXRUJQVlA4IPQuAADQjgGdASqAAm0DPnk8m0okoykpIZLZMSAPCWlu6aAPuBOnyRhQ6nP76AbvWkGL+1N0bjVPy0DuLHIYHkH+l303ttHTU1ftWzw/QA4ioCZgruFYkMbwrEhc6/8KaDgHbhVOt6Ah1fcPze105sRxwYgGsS9FV6GS13IsMBSWfK5j4dCa/nXCK+i0REuiYGz0oCkoe6l6x5OjZw7yb5CXDk8o31wioCKIcPoPq+Bq6JA04Zqp57KRb3/W8LGLuP2vuOS7xZfEqpVoLmFAcl8GmTAplrbSknfbFhmx1POis7ob5bQztVZ3GEd/BjkmxD2f1h1vXmL/er4AvAN8HkA7cBUU7Y/NlRMigKOjbzlgMM06pKSx0Rk860VGAlwJq2uHc+uFtTFH0zQYanPvkkQRGGlwBnwDUQ0qAv1v2ND9k7l8sZEFetmSMzx6VFh8qEZBxb08T74dfXsi97juhy33+rHuyoM7Z5mw+ixmoNtmCIQZa22bkaebBqcN1qkMkqQ4sn/RehmRUh3ETgsLdv+RoAtCSXHQH6CLU5pC+Kiib8eA9BNwWzQmIF1TxLEAjIBk3kEPHjhYZChei022ihv2Kg4ZmiiI9+gF/rtWP9Pxe526GjSJnXfYm08CQyQbGJM6aHOplSoSCE17plQXIyMzLem1Dg9cGgBJLqBuY7MGY4FLMGgD1sEUxtwOpibKBtWYlviW8+xrJd7SmJJKgGIST02WnAwpwHtjT8Pa4ILPjof3oKOn3nJWtW86DUBDhaUQxkVTs1+KWl6uORzEnokMFkPdLPyWl1f1N3JDifzQoFe03V9h/WaRFTeRyr6cY3VewMe1mfyX3zL/KilKwspATVfJ8Y+tZEb/QjnBqx4E5LOSNB3hirPOJ5gYMdAU/p3xEJgrBCqfaUl3lrkVMnGSsE14Fqh/3K4h4gzJvvwNii2Hx8+ieHqvR6I3yrfPeMVH5fWobEuV4MYj03gqNB1+AGXk4UHuhM62q5CKGYbLrSTfXtDLBT2GcP7UHUOQfCyHfZQ4SxUQkeSqVK6FA1YZ4HGy6KGgS97m31cujdGctUlJZDWJl5LJWzmEKXMxTg+sVNy2TRCtf1QSEy7VhXqWjcrkZTniGEi5i/15k2yGl4s79YceFlAfGbhYJDPVGV2dqEAFnzuyyrNKpn0khaKDJ3xjgUWhaZIGkXgjN7FkvYSxoQbw8wDXNltxWWSVk8o2ZxIHWJNCZvE2hWJcBXN1AixsY08d+r7dHSjdhNrZN5+SaWA2HtpVH/luHk+Ekpm7Bc5EEJ34LUBLnIhEoK9A3AxikYubVFDoKM7xEmETgbXvC26kNsk6eFSKAOLPgF9oNkQljVHE0pkl0TBXMnTf+3SDTX4LhZdgoVwi9T11dVM6kodaGm6JobNQcLXzcl/TQP8Zl+su0ZDvSp7lmmV77fQI7zlVfDVsmmi0l0zo/O/95G3DgbDUTwMYExS5NtovxCJd8TWv/uXjwW00fZacX4vmPlMH2lxTc910LXXAQGvHwg5gfK2CfAv11032yED0qrsYEh0634cgSmPAkhVl4OvtQlyhlCHJKmDVKRu3OvczOpYJ8vwzUkxjqV0bxAVK/E6Lp1DEVV1V6aJBR9ht+vLKYHaSoBW1xvH4i4Hlh3dwxp5+ZIfIISm7xme9hIsPdMkbKFdLQT7MYxxKM3CUHq+rKzPFaa6HPrbdrH8AiWG7/U3etk+OwL5zvBwwte/yAC8WqER3aBvD6NAmaVbTihOG5P7Xt7oOlGQ3hP9BteqhxI62JRHdBz1uqWrImCeNXGZ7a5TO3UOzhi64hkmCvO6pxuVcK4vOT0mZDHPi6wbJ5PRTqRvZv88uRIdmgu1S3fHweIf6FhqBy+KfuQWcgvHUcPYbfIsaqx0g0jgV9n/ibMv2/4qHEvt3KcXMnFcrNC9rEjdNouk5XAqG1M85XHL21CpgKJdggp3cw8Ad51UUS/9l+OyN7TzT4aVrR//fD/Xusn8v3JJzl3zeG+8XQ/TpCSgCvkU7rVJFOEIBzPg90mxmn4izCF/yS2+dBGDAv5q0IoIWmkz3c6mIRxfzbZDqynrIuKWTwkmv3G1ajAuq8yrP0v3b3zIecOQAe77PfYb/Q00cjbOZiclFzpCeGYOyEMjvPvBZcne7wMLnSTw/VynynUUDusiHbBEzw9SIfbsdwJZ2KKO6d8Ak7o/Fh72h2k1xhUb0lcNeA/mh8EmICwoSBfZ0VBGYcq53eW5C44P+cc0sA+A7nutggEW/PxUix3Eo1q8fiWC3emd7gMpYGu7CJdlJkC6IuXxmEEULg4us+9HjPsBCgIC+yVhSVy9IsC7U6NB7lFy3RprHCd3MVu4dp8pC21duW1fX6N/j0JPrg9ppeDZ9/SywwMLvEP13ibIQukUi+zxn4s7vJxzcol4KL7EOun7o1zqxTVDBvLebj3LKY7PW+y0GJfMjItDtzmCWxtgZfsdZ0bNDTcd1gL9gIjbInxLt84+nU9IObfgX+hDYOmCgyjvWcu++GuCo4ialQbvUvWVLVySZKCwKNU18rKwxakr8LtIkgMFWGsS/wor9++Fgn0vp2MvO73kCz5DUF4AdFL4rXTEeZ8P5CV33/zheudnCwDxernkGjYklXp7eEP/CoE9wROfdrOfJ/z5s0aqy/JECuF0VO6OLw8zxlSWPcy35YJjovKtNmTQDtdh6JbrBGzj0Qe0UOxT/bARjJMdH7veECVee2cHsj+45Xxpq9WK70VylID//zAupJE21l1OqpYIwpqLz7tEsfq9VwIu6dMLXuEDfCYnOZIJDVMPah/n3dDmN4V3DQc64Mx0+NSIqisVee8MrD5tkBYlIVkPcH8dcA8+fkJvcJ8oEHgDlRyPGU5RxdXNgpNGmxCO/5p9ZmcT2QdbKuSOn0CLlilVgNKWUzq+DPoTinmy9Nlwf8Z3IFHGRi6wYuijq7XO+FIaHSBREjsNzBBetVmRe13Uk+C9ZTdK2vY0NovAMprXySUe+N43QMZus4v+KUpjNyMjoHUI0ZXP69TfJICdFf3lihAiQquf1n9O6CjHQTojiwTiy5wxM1640iQ1FusLW30cNm653lyFaosn3By01OIvYBzsuKlBOCoJ7GB0rce0eRdbWu3L1r7ne10QjdLs+rm7Oeobras2xg8sthzwXMiim5xq4sg9g3TGnlpEkJmEvJ87kJc5iKWe9BN/rqeVdWUuX0N1wMr/YW2AzV8d9nS7q+WG0c9d2veHCvqMk2EtIO4J+TyRM5cVNmXpmd11DkN6VXKhKXoxKW2H10oXkwZ9E2XxTr90qPbqEtekAlhWMrMMDp9FWlaSnzj029tYTzBA6q1QQp1eUOfyDgYQZFxfaVTMdl+vQpPOatV9oY3qk3zlFsC92Vu2xHqrP+1SeuUhxkcolJRh1c4hMNpa7g1H4vQrbZq4vtIca/U46yQRwW9S7ib6lDF63tsln3/TXtr1HH2MQLEOPaoLX7KaGmczl14ga3L+4CXvBQjJH/Qi9fENqOUPOAPB70Zed3eZiQ7knjgXsoKcP/7hjbaL+41RxovEvtQR4NwyX5dfSRv+0yX8PeRsihcV/Ni4BRBY8yY3JCTz7vW0jB377Owam3LzAOamcFrm5Olg241+Gfl5W0apZaLRiQQfiUNdwuV4/GUNlDUxKLBDMhRAyJiQaGASsVHgpyCMBNLpCY7FCQhi2E5DmMbvZ/SH+BVmzSj+YEUhyMN+vFHivz8V6Ye8ErrEKFvFlV++8CxAedwHcrgMTffjdmveG4LjtqsD0zvbvAddgRKTSlyb99aL1rrt08YxoXv4JqsdImlsEVzIq+QQnbA5aN3RlBVivUxQN7DzpDg30QFz/QYjqwgBZPPpuKM5xX5XjHPbqp2cyZuxsjt4T/HcBi8OJzFcrU6iblQ/mDzqZDOLBn2HcXABMsEH1PnpcwIYVM2TnkYd/4H3l9RdHAbHYczXZRHsZiX5IR3PTha/ZH/jCXfwhghSKm2vO/YE0wvhLve3jU+vkcJeKoUxppniYNqa7BT8Syv5tvvE1UA3UbcfNtF+d6SvWhHlhtnTIXwIyQmyTn/REmbALiLu+vQEddKNIumD0yuLXspeFNKPBvR7IXadxJXKQI2F5ZZd6ySxTLYYbwsj6Ou1WT3kmjJl3KfnYnyqv4NBvnpG6Bg3QahSQchxa9lLuQ5XIyrl+t+QBn1dCikfnxyJu1y7KVHn3vvvv3bJM8vdmihMEbNr5IbB0l4byJ1ckaAQBmtSlDXL1EJgjZraAAP7z6N/njebHf8szhX+adQsVgPEJinMmg5Q+Bu7RquNngYO3mzrakEEjIk/4guqr71J1VTloregq0N8YD4DxEZUVnH7cDBGXhM7zVFXFyCHvIDGjoGVWiIwBGzZRUduPuIatqTGKjXCzuafNzc+VZAsmXw6U5FwL22omsiUD8QAIeDMPCblu2mFJRyah22b/yRX6NxaXVBGCorE9EDjF4N805un92J734wQGpM7hLyLpgpjiCDAG6TJzcn1pLN5oTK08u+/bkYwlgwgwWuuyhUbG00spAZH7QP6MYtBRCWYBAXAE9+9EcrF5x0/v3idxE06NQD9iqqe6nh/0eN7E7CIMMX7JZYgow0adIUsiGMT1czwUOzPrMln6sLOou0NOKVhsDGWKDnuLlmhdL9AmjCTLB0wXSzS9FBxjFFU54SHUM6KCgrxi0V2awm0TFa58GePbE2l+4Jjd7wlkGy2ifoAtkyJ/KX2DJ4MpFuwLEYmcDxEcdkbEVWo5+rmG5/u87yfIb1yN+ycIKEAVPwOZwqGORKQW5EXn1E7T2dj1aK5t7eZO4oTzfMCurgEv7QKSBgLGWLkEegBklXZCcLgGST4Dlwnbpd39WcXEf3YNByEwGv8BqX7aqcqkZHolb2x02EOfOFNmVi1oGU6vBRJ0YItRoNhZ6tt2VSSuDdopNXApdHE8WkHz7qp4BC8sXmyaGyWF89rrhCwgA5a9okIcCPKRGGgd1yfPLfEWfaNY1gzM1d1jnCk5gYbULkbVsEv0lmJ5kXMZIohQoHor0JYmHQLJoFTLaO0FhbNsh5BNfGYXCRyTY8+MVoBwNIQFmo1PA05mQ9KsZEvbi3YVAivK85yPY31aGen05Wy+xoEF6QV/H/NqBJYszso5U4PpZyPy2JDDWoZNZ5Cy7KgrZAGyQEpmnNf2ifOc/BfmXSc0V8KSML4GD4AKiOcGhp9wL69oJ2idOWKbX1xuLFZvSmdTYnv/J66reVyU9Rc4ozhp3IZmJZ2f1Qv1vX7QAFa9dHYWHZpjb94MKawCDjSE+smPRd8ppz4rSClh94kgeDcq2GMF0GwM6QqqcyZUe/QerNTk4zlg1nLcKdYn/x7VPBC9wKFqyWMJ/TT7/zagCQJum2T8R3wfo3SZUceNbcrPl2sYD7T0o4tnT3f+5k7r0s9g034dEM4sQByzawBNM8jEeQAfnJPL6eMx4IIugwxKAO5T/VJEv7vtHpuQaO13c+9IosqCcZzQbg90sQelYP3JY6H+75aVzZscMzf26XLDDgQKkeoI9J/FW26/IgLApDVnsXBaF7RDsyMx2dRHRYwWmAhaY356fGBoZiimbvXBgGk8Lukmoh0zwvKykDzw8H2eK1wWW1R9Br5/utm2bvMu5p5RzCk+iB3wA82oWBBUMpFbK5rwg3/Q4GOItgwfU3n0ppHJbN6rSHEb4N4qruCeD/pa/kV9rBsT7gV2AoyUrrw0skuIKihppzAV0vjJkLVlYkiKCaMVGLlUj27N1BhA5hNATPx8FDs0Mv+aamXevJWvnbDLW2QGjsSNfpwgziNyR6nhjeQ3U/hdqQsb5Dz2OZPv5KGCyUrdeIfiKI0fTcM48dthEsbfVpqOAi/MzuX4ORiq/X7inVm0EZZjpwClVlxYsaaf6zmB0G3GWY3WVNaa+wnN7C0W8rLnW1n5pQnp5SbyKa0/4DbRxeYinzpe6COnu+h5T/6c5EutddBj40riG/hbubANmjGzNWdoSlc2DzvstxoitLPJ7JwskMm4ozh7R0EZbpAslr1mZSmR1wHK40/ckC8FeRbbjI7ZMnhaGcasxqiJexy6kiZg93WPuMECZeGqw686o5j+KbTt/f4PvsS0fyNQ6zTS2x1hrP8HIoZKYl7Nn8x2VcF777VVtf9kGqcMrDwSf5s5aS6R2/ehbqZGXSZJVTNdx9DZo7r0BRDOxb2uUGOScRHkZcgBKpzGVlIjHkrrkXhdAneWXK8kzK8AUc57u3c+U5LImn2jvCZhqLPg4On/vkR32JXxp1u0Zyx0UnAn9eomg6HvovZMEb5Ei1aD3Xe67A6kNuZ/0clDB7uNA5mb4BMVgLlIqR4A++fDYnOpijAcOD3I947UjA417Cpq+9fItXSB1yGtqMUkhR54flPfYMU3XW0wVcs3LORjg2vqulDg3baSjbNsaeE7/Zok8vaPYnG2IzZHUspzzC3Vdyj05ik6GWc3YlJ0g9JkcZSTGntDpPxI68YHVcyjA8/2pqiMxHAH2ZOH17IRbDYewjOg9cV+ryCkWeKyoWCVLom+Pdx9ePuPR6h7anH2ScCVdqBYPrPgC2fUO32Epz+Kn5WD4kbx9HCOvG8wg7JuAENAHgcRHhZ00xOS2nXQN8lUSqrhWD2tJEDShOj2d5wHxGS4nDSz6KiwImgIJYwHnAdttIdITq2jXFEAkhSu9DrwtxX1khxVyZ3TxFYVDkwMVVnnRL5BFwFKg3OdgAjH3K5PXhNDf2batXGDLRpOg5NsozOTNRXWVcj9xjsUaltFkGFt/QBjObRxX3j3tMW0me3ou0o8sCZJfkzE6V1ipQ5uVHCKRISfCrYav9lXA3l+ql61Gmnq0QKnNdF6oTfGW6mg3fBmqh1ygCHFwuWuJv6njmm8jQ4bis/F6wRvkFUoYztEFPODHLwDjUyMT7DhE/66scTc8xU5oAjPPBPJSAfMIL5fhDuSbAfjUGQ+XSwOyBVfxTovDgsExUuuHUKgsj9/pmUZHoeiNlF5K5cWzdPp76BPtYxe2aEAAGXzm7Ytg0kBj+baYDrD6xm2L0De8yy1Xs80NfxPtA5uu6hRhpB3/Ov4cRBSDfmLIyP0G8y1sx19FRJYfAY6lFV+i+E+hEXOrpl9gOEcwSdkeH9fomXAAgJEz/Snfyu6ieY0Vcl4JRllc76p2uyLMfiwS9PZjAPK/w5LB+x1u2nBjQ6wEQRx8KXaDiC73zxywVEu2RnKOdH+FH9bn/2ouMGBcilmgLalioIu7oogQLr4rxCUFpLuIWf83bUGBRvCRFRdN7ff4trVxprEP5qe3e/pPdnkTrul5xlf8P93zew9nJqwEQcVl47tJrEG4dNz4l3kUaWzYzhqmsn8eQK6nqmt2deSnQJDuw6LnzUz6iQa7IW+eGGeY2zLkVTi3ugmUAZTwPKyXlgnn/89rnltyYU+kg5z6EZ0zABI+Tu35AO987Q2IF03Av+TONsfRkK1EuvjZesw3OG5n4UmDUAX9cwyDuLDsEGwED0DPKjezXiiOjozFCkGlilgkyPq+7SnULv8NyKq0A7ab36kAg3hzaATmWu/y4fugCw8gROIaABu8d0VWuBi4lwZPPbJI5ejAZOM1l7eRIvVGgNs0Wjiu67/uanlgoS6mW4JHXh0PilhMZXLaka7WfoezD7Itz4QpbPIOAdLACbK+XEiAsKi1DiDVnPNXRH7NSq7gid2aplCtPoZzo+aFMflKBl16gR0DT6R7d1REcAd72ebmSqxJ2evp3bv3XrJv3Mhz9pvpES58JkBP5a/gBkstAUOa2lGLBlhgj6AmM+wCYuwfctSb/xJ4w5NLNwX4H13Biw0nRjnHIVvB/O9mTg7OhfAF2wAlEHmKp6eUZkSYNmLz6vvmYTr9RdAroBILEnvfgN98NrFZBRzo91bdpwVEHm2iq40+mHzIhl2lufedo2mDTtMfx6sbsK6jPjgSfM9x9ZbVYx2jTgKcdPBajZa/5cSsU1oYnwtBCJNyRr07YtJp+C+t4AlypZl+CDVk82zuk55n0R75l/15C/0w4+gUxd+dIVdeoodLVDBhEFM+gxYzXFn3QTXc7u3BxvDTnaDFJ2H4DFi4gUj+eRB4K3kvDspQE2v0K2wlizIin4kIlMZpTV0nnI4Y9xv0X82ez11deZvR2dPFUe52bLkzLjunRUMDKMAdrl19rqlf8nj3gO/ZnK3adk9XCCHMo1wELG1Q7/i43tWkDLqoFAgaQ4/ALaBqZ6SMT77r/dZ8N7C5EJGX1f6PZGNpmbR4LszI33gEqdGmOACfistpqk3yZBPmdoGFdDidPeHVyM/vHe2s5vF/Gq7+nKaHc3tiM2eDPicZi06xLVNaI1zwgplVU7GpSoA4FC4Ra+7+b8tRy9ldot8A9OCVklgshvmILIGn9+bjBRNn6J/z7/QCAm9lRqPUNm86lAfc1HvIYgee63UFJGNFd1dPTS9sshfjNVIHJGk+yTrPvUHQ9Ln3rdWnbSaqag5bI4HbacCgovuhhRtPDpbPEBeTF+3aXXSIi3tdd1epWkuE3Z1JQx5mkknuppmgAalbHlGnpRiZ8UwMkHgCIcUoZe/nBXjvdypcqKtXYbGknou0DPcndJ72FJZQ8ZLGmxHpADcAsGX0nGkuiGkNWS+ekCWhEMpzrpjdwG0BWFsVDlavTBflPO8VnOYI1/QtbTFMXqWMJbOtJUFDKxkJYDd2FoNoyUcFNTe9roA8b61A7/ZlNC+IJZdRt94xLJBrnQ1BLleAfcntISoAsOMq8/z1kZQZnvz7LWXi8mvHcUCyNcndDnG+BqFFZauATBkNgRP+Zmp5mP60K8plqRgF2H49wGlJqK95MpgFJIM1HUHyFWXJl6e+az7b4/39R6CZSCxv4IAVnG19Czf+Eovt8NGMVJ9M7D9CenBpLJwc7lTsZzrTd5T80PddKF0w56XjefyvQMGVc4pefxLFETw3g3aEuf+Miz00b8mhBzhGPIhJTvYzSX73KS35mxf395n/EQz7IN2nD7uB1AXuypLcFoWi/06qGCU3+Apb4TJGE2BCj8kw8D8Acxiok+yTO3FHCzBxIkscqQTYpKsoyF/DAi+/2W4Mk1QxtuYVKYcPFe3BmqyEcYySLxjOyjXTruaXpr4JpmWmM7e+FlT9DSiAjpfHPtWbehzAwXtnQDfrgcbyLEJmlBLDshBohjXmMjO7pJdPcraShCTD9HRupmDqwCVtTN5BUJRnI2dJlnlKz6csZx/rjkEeqLMxOTA7eYkb5+7c4QU/saQmnFWLKgtpxR7lcDWqVznTU2QQTtM4WhCVT8LHleohhp7mE3pqf3s71vb7bvxPpznuD1MZcGccFLniGk0KIceEoJ/9Sr2E97LhAYYtORH20jICt0ZBaZJ3nj8mSN9Dt2y9Ek9cIdAy8XUFEhd45tNufm0Bwf7oANzcimivyFTfMh9Y95M94luzAIRSHtxL0OzuxaliWkLobXNKMieXX5JJJVLXlD2He9tLJrB0S8HMo6iGet6fJwrIxbvisAzSvGBzXIh6IGPfm4leBQXyAgHyJu7x63Uyn9HSb1kJrXPsU48d9vMcYlV52DM0p+t36pO7ps/ZPi0Xnc01OorYJvg2mfiozLxQfyxjpnfD0Xgx9bMsCOzYbckRL3hORxtPYZxWvlGNGjiluW779Z/TeZxdUuq7Tpn79cIAMLUBxe42kqNUiR1T/v5cSn8iLNdbEkEKT/Q/oRl8nmqZkB8LgW195etP1AW/7Y7RkdiGbfecb789s/S2AG89cBXY2CP/VxuIQbsha3awr8KYZ663czmtzHEvfxurp1w8VLF8U1LEB+ZHssYBOkrQPUHAsNeDvzpzM0yQNhadzudioS9eJPNG86Hn3B9lZA1z9RaW4TaFItg9QwbsQoRtFbSTR+asTxmTCAAD5pCFptCxBqRVApgKPwoiQHWSNdIB+m3erPYxSwrYZ06VFeMunPAI8kHOe7n8Isr7LafHUjHzKNIpHGC2s0JSyr9c4CsLBWMWLmwDYhUgFciHdEBCxGL39fKxMyKldJmHiTwCUyZ57Rwh71N7f/AkwB05ynOzAs7XLnMCIzos2qz9gSdfTk8nUfZGEnhMU0NF0stw3EuWvcslz2YV6a1+WqV+J93m8jiwcFk9TL/qGfCWCakme+s67tyF6Pioaryh0q9XrM7T183BdemfAj0e5f8XB3b8eYbUy4K6iHK0fH1DNyy/0DJKPioZWKw7sPBeF+h9vr53nTLVW9vGXLgdReP+oMONWW/hroVOe8DcR1Yw9LEJPGg7ZZIDPWkJUnHLDSSeixF0qcV/cc5MvdxbSGULjIYPnF7Othg6fRLltltbNXI9aJA0l2SYaPEXGu9LC3UgGSeAfA5smYtW6Bz7Nn8KqdCq8zxA6iv4Ur7FxhAe4peanEkZt84KWyc83sSzLWCvzzVgExxiouGx8slVi3CvJUBBodXAx6Y3v8EhxfYvZfzxEfgeadtZDGqhq4PlhL6VC1/txxFFhXnWjN++C1uEIqgRZTusCeGth+kZ6y+1jjh9Owf7nMMlAAL+mx6V/qVAnpDXojIK63maDVidb3VMkOtEOHWLlMeUQKdvRJbuotKt5rO3s+ZGzpEK6hUrxVKCg7lqF4e4QsWBuaiPuaqAKqz9mY+FGvvmij+CMY4w+JESb9OP1phGJqjlg0DWmaOMBhMvE5cCU13tmFekYQgpW/Sl3qHBXEsVtKtTccbs+SYepSxJPdnO2MYZS6/oqqjXC3gsJokoCXhx+gxwRag2MSO3W9h5TeKWu0vtmZE9PQ77K5JNfl7ZkDmnmIKvF7QoNZQs9gITdFrI0RhwmJHSsX7qPgFW21X+HZ95ZHu8wNRZugc77Sj8jyL6CBu8OIlWNKUPCV5MBOrU6hc3Moml84XRCtjNzkWfmZJE7/0fQR7LnISxlnFVpite/iXNQui4YIpG5roCpCg2CvknpOgAho41K1a3sFJKbMDc2oPjr5ASezDZ2PY28Puv1bw74tvg2C4zXr/G01+KLqm1dVmpvKXa52TJtygG26rb4CL880h5rXmWFeHCGdQ32MbcADHcA6KSDAuiS8bhKvQPHo1GM4Hd/T6r7AtZWNhqU76hEs55wVWlpQsz1jdPqD4TKUzSmwvAZroVXMUTDmJ5vEM/MM2L2zoNdoDKfEDdbmVOMBp/weavJbkh36vG5qSpEI5cDXi7LYmg0VZDD2uYV34ex9GTqxIHMVJkquONCghQYlcZVbqNMc2//2WLi0t2Z2TsPwltaFVx1jwahpiwLnT8lY6Bb9BUmYk4Uc/Dk+ilWrQ4VUfNYc90g5uwNQQMSJAsZoCnC0FhFYLV4LiftIENIPPMG8DzYCiWCPnJ4WDr6/JU8kKmHNiN4KXZig1jTyDf0ez9n+K32BtPRm0r4ee3vml/vW+cd/lhyd6lK87F4IkImdm5mMUwGBAz2yLSoXf9UD7V3pQveaRSfOpwOfh5dq0sidmYLCYsuDvzh4L4qM7nPTOtO4BXZOm3L4g3tHq192YwUYwSJTyEr1Mibz/lme8LRdlwd112to34TDU2ch1Bfp0irAnEoYPSfUZfyYU34WDy5PONr/awHsB17FmEQ1fgQaMr/IVRsY2mvsG0VyQ6ADkw6UtSh1IocyHSM28jJMYOovr77NnDh/akq0TiuTUXo5kjOv/qJK2LxN0ddXspQ/H5IFJeTwvZ2FkCX1slNOGhlIc/y8Rqm96B+TW07T6uA70bQi7K5FiSPfCNrYp66hs9jI+Ko6qgJvTFO1Udm88Oh3KgcjB3SgfdYDFbBoHar4Dd+BWQgrPg0DrXrJOwV38ADwgW6ymQikyJhh1AI0E+m6Gg/ZQzPhQyWow0+xFIO09mJj/efjlWdNps4xH/RauWA2rr8/gyPv4scIH7mQcFmK13JZ1/SDU+t/W3+8fufbBya/iCpn6r+pf1aXLEQydnjrJTTdguu+b9uZnTN962Ov1vo6B9UGUqpk/1LJQi6A21ofzQXnC7pRfVvyUCHYmiOAy7qT/VtBHbUDXUckus+i6bxjfv99ZQUT6fZcS7HVpj2o3pl3DtNF6KymU2aPFnYNJusDB6eoZ0XjPSGxxzyfWKU9LSc3ydtiBVFctK3iuZyH5wNlLvEjTSt9SrJ4u1X46fuxeKOJnjiJ5XvxkBSYx0tiEcQF5XGifCudvD3qoDQG3JjnteZRdg3u0+vETfGj744Br+Il9h0mThC2DAP2GQ41rvhn6rvseCwb79Q/g1lnhSHXrmpr8cA8ZIsJEsr78h40d3VsTjIq0cXQl9siqvZDmb865qGs8LMlmIdzcsHrhuz+0Uy+3UMgmOV9GfkcSKrtzOoxooV0il7tU7dg9WUUMs4KBxDEWA/n3obluGbkX720hMngfUc2tmqYKOl1AYQxgn2zwvScMyqANlWvSRDTW0dUaWOtnAqmoUSzkoBlkRbeyQpcijfQXjm5HGyt7elyo8GaWvBchv4pO1x4MvOzToXB/YWNbRKb941STqZd0FO2tCWJZnqxZuty0oN/Mo21ydqTLv6iJOICjVXl9btx3DZwkuhySCI9cIoUsJnwjsACIAhsnmeTpb+h/kl4wPlH1h6pwm/2eSATVQYevRdBeuzDq6K+a6UIgOLWizWVZPs86qFSrzmTpHRhPb4Xpqoq3GUOYtrAy7PluSHTRw/mu/BuedGmDmEcQSjRctenebSh+oZZ3ymtoCE1kGtSu3Lop0qisgZ3wLirC3BVBdU9AncwMm7BxFbjSg/wx5oa8NS/tetszjNr9hhU1c3seJaKgxrdzxKYfahxts9jCiMpBsCYOWTG1SqiZwBdsgCwDrKkZ74xU3Es09GItcV1pxmElIlKQX2I3LhQr7KEVZWG/naZmQFjdJUcIiWYCORyrl8kV2DTJYJiusPMe9O1Yd+eWOSJM58RQ+5Gthkdy+wNFh3GpPXfGj7ht7IXDdm8Q6A6PTDrcfxd7ojtTpfDeHlbUON2VLJFutgadh3YpMQnpdBXIUBe2DYirgqmG6Er2XYRPigWZRUgx71x9JzWhohn7BVilDFfeij33CCz5JyE4IokQETwo+MaFTfA5XX8X0bBEzq9PD1RE+wq4OuB5lQH+JuTjUTR0gI30asAkD0BFbb4Gw8dOuZWhWxl73Xetg6Ha69idS9+T5kFsNi6HFGK+yjWbFfUooIrNX4QC88jjYeSx+x0ev+AAo05tpEQ3Be6Tc3hXO4dCVA4hOU4eBPuUq0afhR5P+KP1asiiT/ZdbM9+WYnqhLpza8BIs/orEaXiwdgM5zt1O5+DwvC9wgZZEif+z4gkX/N6+DxJ/T9yPItohYwY5lGctbyUgumorZBxag9D7ftXDHPFu28ucS87dwhxJ0uE1m5ur27kftQDsutcfkEoqILlaIlxHnZYKig4I1UfqyQogim1YLeoAMwvEwPeQJIjM+iz0dM7cCUSNzJWXR2fov/vLwOlZM6jbHZAC4jzhaWL9dH55emBOjG1dH5DMowriLv5PeN4GqQtaYVh9JONWf+RKrxJ7rizBRDZRXPhHp9wC2IYtZi4OTJPv2hcCJgRxCOsUvtt4/blCBIAkfYw5Otq/IOlYce0/eU3WalCfa4G4+aq4/FNsHl02vamxWzrZi7NBQw0BvnXbR1x8YLyv5GdkCyqLDoHy1H4GXS7qQAOT1a/x1wZnCInaRTEgS7oUcPnXtyGk/o8LG/bhVCvNJF6KV23o5FbjWB9mTPEecNGj1WXBtJTnTVTWmtvOFFGtWzY6fayo31Nj2JJyAo2E1WP7xNB7FSdgc0F7SCv0KS4ODCSc7rNmvgv+puVfSHhLFCdP8HlTX2ujEKlwAZAPg7Td4sqRhm9bFyJdQnhNy8KDlJr/DvyZA1+SHULMGcxhGrTKSRUCZVHOtevnxguy0yWew9TQIiXSOZclP/goZliGkq04SD9A3uJAF5LeX0AVmnEoVyhJaHashC4O+GgmbIMpySo/0+mqHl6len3adCCWcEXHsuxoOtTZg8P3nD78hN4FeZI1B/6l9zLC0Fq8K0drfpS26hINI3R6GI1+6qdfPjOJikLEPfqq3kogTVZRyPD0ajcYRbnzKNfsRgjKTxOXogOIPJtJp6mUHciHVZHW2cEj/L7VPUiAnXdefIA8OYdSAFNZaFTxYD1q0PxSk29Wofcfa81C99afUXEWoPMm3EpdYhpWal7zKULarwuhTr5vaGPIz5eZw3Ngq3BBa4tddOSFBZ7aw/CyJqO5Nu2Gk1Hdup9/GhqfP5W5EAEbLV/horIqpbjNmbuYNjXWsBqlRg7eFTQ+Az9dfYDfUcDPb9bDaJYG5IQVD6stLr2KFqbb3a/7bODSdxRclJkDMbY8etSQG5CBg2k2CD12XeOo7UN6v7mf5jGUdI7yro4wYvWMQnK13W0UYmJaJNYlU711L7sYthP6/F1jW3fSK54A0kaEUqd9s/HpBYVl83GK5SZS1UD8DCZ3HwlMvOAz5S4FGbOhwWPzgjeovteJRsWot49EhTsPdFBe4Eo1kjFQG2qUq/MuZ2fh4ErsVHZ9oXges/rZAMrX+OaO23UzmityU3CQJhNW4O+dnetldUbPBrH+tR5bWfsDr3a61wEMYeDLH4EBWk0GDTPQIP28ARR6apKnjg9N7jGpfew9x0hl3JsSADqKUhl8wRNWykURiVOR1tPvHXvz3pAUeDYEYyFFptrjhgSWgVI8IZp5UTNICrPQ6kDc5m5Svs7/NwXdz3S4Fftc85xx/mnYntL3FOGIGbzzSCDMLY4W7u56Pk/ha6vW1fBWmPPORpsP1s6cVpCxfpwFHZxIU6okDa3rzjgZFPqWBnLORCD/DDsTBOy+0m8oMZxTYVWe3HIKbaJ1nBKVr1GIMR5h/NHFZYaL7PGJbPxveIm5LOQLgwhux6qnKSyBabdPVYjhI3lhqoPsiaj2LC/MRB0Ujn5Fg29zZCsIZsUtKTWAx4w+8juONdfJJhkJRuBZFmBrDtz9tAvXo9uG2YKGffHVM0sA9HM26kb6mnicDycXdmVbC2YhDZnpQgjOeQQ+C8yiBTlPLSgC92xl2182R/sOWGUk/RZz+xp8htHedNJEqkxlUDHduYTQtgfCTI9TqMZh3vBQKpEilSSUPTfJT5sPSWiCZHlDQ62zLtFgCvWGrRLPWmy75aV6YVj5fdQv8I85hwia4add6n4E1x3h+rp51SxY+1wMy8IhmHn/3fEUf50Wp/7Y6WboQFd9XpH8m9r7KL5H6KfCpotlFaI7+H1RlDqGlGh06U4/Dt5fENtLYQkLRNvGy9HSk2pJHXKmoOp3Vaaat5ICX96D4zeAkHQgNSkxIFEs/Pk0WXm4RgwUj2Hyr9n8mzNGZ7m5Ic7uo6wZ8IHBWDxua/D/gJxqUmV4fuU2vJ78xcll+lv2y34aFwOZ5TpV7TnA8KtQ4krAF2rCD1fJbP8C+KV/eoBU0Ig+jqG1MQYJ1F3Qmj9+xPt2LdVh4goiGWb+dIM1ojZ4P4mUKIARmxNNDB3CtfTc5mSvPrENYx9V9oeFmfY4IjdBLVTwEY8UU/Z2fZRdQx/AcOGmVKzKpOe8dVwKN1BZ0566a0tuZEjbS3+PlGPAFuc0VuCqZ+pam/z1q2RDT5SAoWxMB6YefMoC+1RFxarJSOJnDz5xsbCVhCj2Fw2kBNTd3wkqUtO+Y2H2gLKa9QLMKLs0cwqlO8eyyNSEB5T9WLnx+ANMxU+GjQ6DWx0mAIS4U7wWyvL3WfWRMrJv4tcD+6amATwVi759wwN+SRorDeBDKASAb+RIOhimHWi3rNSP7/zodbNIAOHmTQf6OfLryEGuZvYv4FaNw+L5h/ai6Mr9ZfZidizMVjuH5Xgje2hgJlwFiVaj6yjTRoEEoMIu8qDy3PZm4u5o1kaRNfX3SfEpsVEv14/jm4fFrV4ACDKSPmiMfJqZpnnHChUuOWEHPcpVR0QCKgAWV6nXdENC2j3vKeOI4X3ZmwAAJjUihCB/U18CjdWXldfAveGO7/kbdepjkAAAA==" alt="Emilio, DJ Ponte — DJ profesional en A Coruña" width="640" height="877" loading="lazy"></figure>
+        <span class="eyebrow">DATOS DIRECTOS</span>
+        <h2>Datos de contacto</h2>
+        <ul class="contact-data">
+          <li>📱 WhatsApp / Teléfono: <a href="tel:+34669060192">+34 669 060 192</a></li>
+          <li>📧 Email: <a href="mailto:djponteabailar@gmail.com">djponteabailar@gmail.com</a></li>
+          <li>📍 Base en A Coruña · Eventos en toda Galicia</li>
+          <li>📸 Instagram: <a href="https://www.instagram.com/emilioponte" target="_blank" rel="noopener">@emilioponte</a></li>
+          <li>⭐ <a href="https://share.google/gfjr3aVF8ZyFpgi9q" target="_blank" rel="noopener">Reseñas en Google</a></li>
+        </ul>
+        <h2 style="margin-top:38px">¿Llegas a mi zona?</h2>
+        <p class="lead">Sí, casi seguro: trabajo en toda Galicia con base en A Coruña — habitualmente en A Coruña, Oleiros, Sada, Betanzos, Santiago, Ferrol y Carballo. El desplazamiento va dentro del presupuesto cerrado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta-final">
+  <div class="container">
+    <h2>El siguiente paso es un <em>mensaje</em></h2>
+    <p>Sin compromiso, sin spam y con respuesta en menos de 24 horas. Las fechas buenas no esperan.</p>
+    <div class="btn-row">
+      <a class="btn btn--wa" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar disponibilidad por WhatsApp</a>
+      <a class="btn btn--sec" href="/contacto/">Prefiero el formulario</a>
+    </div>
+    <p class="micro">Respondo en menos de 24 h · Presupuesto cerrado y sin compromiso</p>
+  </div>
+</section>
+</div>
+
+<div class="pv-page" data-page="aviso-legal">
+<section class="hero"><div class="container"><div>
+  <h1>Aviso legal</h1>
+  <p class="lead">En cumplimiento de la Ley 34/2002 (LSSI-CE), se informa de que este sitio web es titularidad de:</p>
+</div></div></section>
+<section class="section" style="padding-top:0"><div class="container">
+  <p class="edit-note">✏️ COMPLETAR: nombre y apellidos / razón social, NIF, domicilio y email de contacto.</p>
+  <p><strong>Titular:</strong> [Nombre y apellidos] · <strong>NIF:</strong> [XXXXXXXXX] · <strong>Domicilio:</strong> [Dirección, A Coruña] · <strong>Email:</strong> hola@djponte.com</p>
+  <p>El acceso y uso de este sitio atribuye la condición de usuario e implica la aceptación de las presentes condiciones. Los contenidos (textos, imágenes, marca DJ Ponte) son propiedad de su titular y no pueden reproducirse sin autorización. El titular no se responsabiliza del mal uso de los contenidos ni de los sitios enlazados.</p>
+</div></section>
+</div>
+
+<div class="pv-page" data-page="privacidad">
+<section class="hero"><div class="container"><div>
+  <h1>Política de privacidad</h1>
+  <p class="lead">Información sobre el tratamiento de datos personales conforme al RGPD (UE) 2016/679 y la LOPDGDD 3/2018.</p>
+</div></div></section>
+<section class="section" style="padding-top:0"><div class="container">
+  <p class="edit-note">✏️ COMPLETAR: identidad del responsable (mismos datos que el aviso legal).</p>
+  <p><strong>Responsable:</strong> [Nombre y apellidos] · <strong>Finalidad:</strong> responder a las consultas de disponibilidad y presupuesto recibidas por WhatsApp, formulario o email, y gestionar la relación comercial. <strong>Legitimación:</strong> consentimiento del interesado y ejecución de medidas precontractuales. <strong>Destinatarios:</strong> no se ceden datos a terceros salvo obligación legal. <strong>Conservación:</strong> el tiempo necesario para atender la consulta y las obligaciones legales. <strong>Derechos:</strong> puedes ejercer acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a hola@djponte.com.</p>
+  <p>Este sitio no utiliza cookies de seguimiento ni publicidad. Las fuentes tipográficas se cargan desde Google Fonts.</p>
+</div></section>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="/" class="logo">DJ <span>PONTE</span></a>
+        <p>DJ Ponte es un DJ profesional con base en A Coruña especializado en bodas, cumpleaños, eventos privados, eventos de empresa y sesiones vermú con vinilo en toda Galicia.</p>
+        <p>📍 A Coruña, Galicia · 📱 <a href="tel:+34669060192">+34 669 060 192</a><br>📧 <a href="mailto:djponteabailar@gmail.com">djponteabailar@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="/bodas/">DJ para bodas</a></li>
+          <li><a href="/vinilo/">Vinyl Set aperitivo</a></li>
+          <li><a href="/cumpleanos/">DJ para cumpleaños</a></li>
+          <li><a href="/eventos-privados/">Eventos privados</a></li>
+          <li><a href="/empresas/">Eventos de empresa</a></li>
+          <li><a href="/vermu-tardeo/">Sesión vermú y tardeo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>DJ Ponte</h3>
+        <ul>
+          <li><a href="/preguntas-frecuentes/">Preguntas frecuentes</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+          <li><a href="https://www.instagram.com/emilioponte" rel="noopener" target="_blank">Instagram @emilioponte</a></li>
+          <li><a href="https://share.google/gfjr3aVF8ZyFpgi9q" rel="noopener" target="_blank">Reseñas en Google ⭐</a></li>
+        </ul>
+        <p style="margin-top:14px">Zona: A Coruña, Oleiros, Sada, Betanzos, Santiago, Ferrol, Carballo y toda Galicia.</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span class="year"></span> DJ Ponte · A Coruña</span>
+      <span><a href="/aviso-legal/">Aviso legal</a> · <a href="/privacidad/">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+<a class="wa-float" href="https://wa.me/34669060192?text=Hola%20Emilio%2C%20quiero%20consultar%20disponibilidad%20para%20un%20evento" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg></a>
+<script>
+/* ===== Navegación por hash entre secciones (single-page) ===== */
+const MAP = {'/':'home','/bodas/':'bodas','/vinilo/':'vinilo','/cumpleanos/':'cumpleanos',
+  '/eventos-privados/':'eventos-privados','/empresas/':'empresas','/vermu-tardeo/':'vermu-tardeo',
+  '/preguntas-frecuentes/':'preguntas-frecuentes','/contacto/':'contacto',
+  '/aviso-legal/':'aviso-legal','/privacidad/':'privacidad'};
+const PAGE_IDS = Object.values(MAP);
+const menu = document.querySelector('.nav__menu');
+const toggle = document.querySelector('.nav__toggle');
+function show(id, push){
+  if(!PAGE_IDS.includes(id)) id='home';
+  document.querySelectorAll('.pv-page').forEach(p=>p.classList.toggle('active', p.dataset.page===id));
+  document.querySelectorAll('.nav__menu a').forEach(a=>{
+    const h=a.getAttribute('href');
+    if(MAP[h]!==undefined){ MAP[h]===id ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current'); }
+  });
+  if(push!==false){ history.replaceState(null,'', id==='home' ? '#' : '#'+id); }
+  window.scrollTo({top:0});
+  if(menu) menu.classList.remove('open');
+}
+document.addEventListener('click', e=>{
+  const a = e.target.closest('a'); if(!a) return;
+  const href = a.getAttribute('href')||'';
+  if(MAP[href]!==undefined){ e.preventDefault(); show(MAP[href]); }
+  else if(href.startsWith('#')){
+    const id = href.slice(1);
+    if(PAGE_IDS.includes(id)){ e.preventDefault(); show(id); }
+    else { e.preventDefault();
+      const el = document.querySelector('.pv-page.active '+href);
+      if(el) el.scrollIntoView({behavior:'smooth'}); }
+  }
+  else if(href.startsWith('http')){ a.target='_blank'; a.rel='noopener'; }
+});
+window.addEventListener('hashchange', ()=>show(location.hash.replace('#','')||'home', false));
+show(location.hash.replace('#','')||'home', false);
+if(toggle && menu){ toggle.addEventListener('click', ()=>{
+  const open = menu.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open?'true':'false');
+});}
+document.querySelectorAll('.year').forEach(el=>{ el.textContent = new Date().getFullYear(); });
+const form = document.getElementById('form-contacto');
+if(form){ form.addEventListener('submit', e=>{
+  e.preventDefault();
+  const msg = `Hola Emilio, soy ${form.nombre.value.trim()}. Quiero consultar disponibilidad para: ${form.tipo.value}`
+    + (form.fecha.value ? ` el ${form.fecha.value}` : '') + (form.plan.value.trim() ? `. ${form.plan.value.trim()}` : '');
+  window.open(`https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
+});}
+</script>
+</body>
+</html>
