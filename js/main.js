@@ -1,3 +1,7 @@
+/* Fix scroll restaurado por Safari iOS */
+if(history.scrollRestoration) history.scrollRestoration = 'manual';
+window.scrollTo(0, 0);
+
 /* DJ PONTE v2 — main.js */
 
 /* Menú móvil */
