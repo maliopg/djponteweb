@@ -87,11 +87,5 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/noticias/:path*",
-      "destination": "/",
-      "permanent": false
-    }
-  ]
+  "redirects": []
 }
