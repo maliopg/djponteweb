@@ -138,7 +138,7 @@ p:last-child{margin-bottom:0}
   font-size:1.6rem;cursor:pointer;padding:6px;line-height:1}
 .nav-cta{display:flex;align-items:center;gap:.4em;font-family:'Montserrat',sans-serif;
   font-weight:700;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
-  color:#fff;background:var(--wa);padding:9px 18px;border-radius:999px;
+  color:#fff!important;background:var(--wa);padding:9px 18px;border-radius:999px;
   transition:background .15s}
 .nav-cta:hover{background:var(--wa-dark)}
 .nav-cta svg{width:1em;height:1em;fill:#fff}
@@ -385,3 +385,5 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 /* Fix CLS — imágenes carousel y cards */
 .carousel-track img{height:auto}
 .c-card{contain:layout style}
+
+.nav-cta,.nav-cta *{color:#fff!important}
