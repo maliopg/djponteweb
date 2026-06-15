@@ -329,8 +329,9 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 @media(max-width:920px){
   .hero{padding:100px 0 60px;min-height:auto}
   .hero-grid{grid-template-columns:1fr;gap:40px}
-  .hero-img{order:2;max-width:340px;margin:0 auto}
+  .hero-img{order:2;max-width:340px;margin:0 auto;position:relative}
   .hero-img img{max-height:340px;object-fit:cover;object-position:center top}
+  .hero-badge-ext{order:3;position:static;transform:none;left:auto;bottom:auto;margin:0 auto;display:block;text-align:center}
   .why-grid,.vinyl-inner,.services-hero{grid-template-columns:1fr;gap:32px}
   .service-grid{grid-template-columns:1fr 1fr}
   .price-grid{grid-template-columns:1fr}
