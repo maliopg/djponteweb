@@ -20,7 +20,42 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.djponte.com/og-image.jpg">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css">
+<style>
+/* Critical CSS inline */
+:root{--negro:#0E0D0B;--vinilo:#1A1713;--card-dark:#231E17;--crema:#F5F0E8;--crema-2:#EDE6D5;--oro:#B98E3F;--oro-claro:#D4A84B;--tinta:#FAF7F0;--tinta-suave:#B8AD9E;--wa:#25D366;--wa-dark:#179848;--r:14px;--max:1100px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--negro);color:var(--crema);font-family:'Montserrat',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.header{position:sticky;top:0;z-index:100;background:rgba(14,13,11,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(185,142,63,.15);padding:.75rem 1.25rem}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:var(--max);margin:0 auto}
+.logo{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.4rem;font-weight:600;color:var(--crema);text-decoration:none;letter-spacing:.08em}
+.logo span{color:var(--oro)}
+.nav-toggle{background:none;border:none;color:var(--crema);font-size:1.4rem;cursor:pointer;display:none}
+.nav-links{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.nav-links a{color:var(--tinta-suave);text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:color .2s}
+.nav-cta{background:var(--wa);color:#fff!important;padding:.45rem 1rem;border-radius:6px;display:flex;align-items:center;gap:.4rem;font-size:.75rem!important}
+.hero{padding:4rem 1.25rem 3rem;min-height:90vh;display:flex;align-items:center}
+.wrap{max-width:var(--max);margin:0 auto;width:100%}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--oro);display:block;margin-bottom:.75rem}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:600;line-height:1.1;color:var(--crema);margin-bottom:1.25rem}
+.lead{font-size:1rem;color:var(--tinta-suave);margin-bottom:1.75rem;line-height:1.7}
+.btn-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:8px;font-weight:700;font-size:.85rem;letter-spacing:.04em;text-decoration:none;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-sec{background:transparent;color:var(--crema);border:1.5px solid rgba(245,240,232,.25)}
+.btn-wa svg{width:18px;height:18px;fill:currentColor}
+.trust-strip{display:flex;flex-wrap:wrap;gap:1rem;font-size:.75rem;color:var(--tinta-suave);margin-bottom:.75rem}
+.trust-strip b{color:var(--oro)}
+.urgency{font-size:.72rem;color:var(--oro-claro);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.hero-img{position:relative}
+.hero-badge-ext{position:absolute;bottom:-1rem;left:50%;transform:translateX(-50%);background:var(--oro);color:var(--negro);font-size:.72rem;font-weight:700;padding:.4rem 1rem;border-radius:20px;white-space:nowrap}
+@media(max-width:768px){.nav-toggle{display:block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--vinilo);padding:1rem 1.25rem;flex-direction:column;align-items:flex-start;gap:1rem;border-bottom:1px solid rgba(185,142,63,.2)}.nav-links.open{display:flex}.hero{padding:2rem 1.25rem;min-height:auto}.hero-grid{grid-template-columns:1fr;gap:1.5rem}.hero-img{order:-1}}
+</style>
+  <!-- CSS no crítico cargado de forma diferida -->
+  <link rel="preload" href="/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"EntertainmentBusiness",
 "name":"DJ Ponte","description":"DJ profesional en A Coruña con más de 140 reseñas de 5 estrellas en Google. Bodas, cumpleaños, eventos de empresa y sesiones vermú con vinilo en toda Galicia.",
