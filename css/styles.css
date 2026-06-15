@@ -363,11 +363,10 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 
 /* Badge de reseñas fuera de la imagen hero */
 .hero-badge-ext{
-  position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
+  display:block;text-align:center;margin-top:14px;
   background:var(--oro);color:#0E0D0B;font-weight:700;font-size:.82rem;
   letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;
   border-radius:999px;white-space:nowrap;box-shadow:0 8px 24px rgba(185,142,63,.4);
-  z-index:2;
 }
 
 /* Botón Instagram */
