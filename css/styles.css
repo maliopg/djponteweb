@@ -331,7 +331,6 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
   .hero-grid{grid-template-columns:1fr;gap:40px}
   .hero-img{order:2;max-width:340px;margin:0 auto;position:relative}
   .hero-img img{max-height:340px;object-fit:cover;object-position:center top}
-  .hero-badge-ext{order:3;position:static;transform:none;left:auto;bottom:auto;margin:0 auto;display:block;text-align:center}
   .why-grid,.vinyl-inner,.services-hero{grid-template-columns:1fr;gap:32px}
   .service-grid{grid-template-columns:1fr 1fr}
   .price-grid{grid-template-columns:1fr}
@@ -362,7 +361,7 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 
 /* Badge de reseñas fuera de la imagen hero */
 .hero-badge-ext{
-  display:inline-block;margin-top:16px;
+  display:block;margin-top:14px;text-align:center;
   background:var(--oro);color:#0E0D0B;font-weight:700;font-size:.82rem;
   letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;
   border-radius:999px;white-space:nowrap;box-shadow:0 8px 24px rgba(185,142,63,.4);
