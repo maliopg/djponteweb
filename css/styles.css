@@ -147,7 +147,7 @@ p:last-child{margin-bottom:0}
 .hero{padding:100px 0 70px;min-height:90vh;
   display:flex;align-items:center;background:var(--negro)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-.hero-img{position:relative;width:100%;overflow:hidden}
+.hero-img{position:relative;width:100%}
 .hero-img img{width:100%;max-width:480px;border-radius:20px;
   box-shadow:0 30px 80px rgba(0,0,0,.6);margin:0 auto;
   display:block;object-fit:contain;background:transparent}
@@ -329,7 +329,7 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 @media(max-width:920px){
   .hero{padding:100px 0 60px;min-height:auto}
   .hero-grid{grid-template-columns:1fr;gap:40px}
-  .hero-img{order:2;max-width:340px;margin:0 auto;position:relative}
+  .hero-img{order:2;max-width:340px;margin:0 auto 28px;position:relative;padding-bottom:18px}
   .hero-img img{max-height:340px;object-fit:cover;object-position:center top}
   .why-grid,.vinyl-inner,.services-hero{grid-template-columns:1fr;gap:32px}
   .service-grid{grid-template-columns:1fr 1fr}
@@ -361,10 +361,11 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 
 /* Badge de reseñas fuera de la imagen hero */
 .hero-badge-ext{
-  display:block;margin-top:14px;text-align:center;
+  position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
   background:var(--oro);color:#0E0D0B;font-weight:700;font-size:.82rem;
   letter-spacing:.06em;text-transform:uppercase;padding:10px 22px;
   border-radius:999px;white-space:nowrap;box-shadow:0 8px 24px rgba(185,142,63,.4);
+  z-index:2;
 }
 
 /* Botón Instagram */
