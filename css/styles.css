@@ -245,8 +245,10 @@ p:last-child{margin-bottom:0}
 .c-btn:hover{background:var(--oro);color:#0E0D0B}
 .c-dots{display:flex;gap:8px}
 .c-dot{width:8px;height:8px;border-radius:50%;background:var(--tinta-suave);
-  border:none;cursor:pointer;padding:18px;margin:-18px;
-  box-sizing:content-box;transition:background .2s,transform .2s}
+  border:none;cursor:pointer;padding:0;margin:0;position:relative;
+  transition:background .2s,transform .2s}
+.c-dot::after{content:'';position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);width:44px;height:44px}
 .c-dot.on{background:var(--oro);transform:scale(1.3)}
 .google-link{display:inline-block;margin-top:24px;font-size:.84rem;font-weight:700;
   color:var(--oro);letter-spacing:.04em}
