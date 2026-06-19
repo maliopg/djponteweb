@@ -3,19 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="dns-prefetch" href="https://wa.me">
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
 <title>Página no encontrada | DJ Ponte · DJ en A Coruña</title>
 <meta name="robots" content="noindex,follow">
 <meta name="color-scheme" content="only light">
 <link rel="icon" href="/favicon.png" type="image/png">
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css?v=2">
 <style>
 .error-page{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
 .error-code{font-family:Georgia,serif;font-size:clamp(5rem,15vw,10rem);font-weight:600;color:var(--oro);line-height:1;margin-bottom:0}
 .error-page h1{font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:16px;margin-top:8px}
 .error-page p{max-width:480px;margin:0 auto 32px}
 </style>
+<link rel="manifest" href="/manifest.json">
+<link rel="apple-touch-icon" href="/favicon.png">
 </head>
 <body>
+<style>.skip-link{position:absolute;top:-40px;left:0;background:var(--oro);color:#0E0D0B;padding:8px 16px;font-weight:700;font-size:.85rem;z-index:999;border-radius:0 0 8px 0;transition:top .15s}.skip-link:focus{top:0}</style>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
 <header class="header">
   <nav class="nav" aria-label="Navegación principal">
     <a href="/" class="logo">DJ <span>Ponte</span></a>
@@ -33,7 +39,7 @@
   </nav>
 </header>
 
-<main>
+<main id="main-content">
   <section class="error-page">
     <div>
       <p class="error-code" aria-hidden="true">404</p>
@@ -58,6 +64,6 @@
   </div>
 </footer>
 
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js?v=2" defer></script>
 </body>
 </html>
