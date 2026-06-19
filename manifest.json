@@ -1,0 +1,19 @@
+{
+  "name": "DJ Ponte · DJ en A Coruña",
+  "short_name": "DJ Ponte",
+  "description": "DJ profesional en A Coruña. Bodas, cumpleaños, empresas y sesiones vermú con vinilo en Galicia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E0D0B",
+  "theme_color": "#B98E3F",
+  "lang": "es",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -363,3 +363,9 @@ details p{padding:0 22px 20px;font-size:.92rem;color:var(--tinta-suave)}
 .c-card{contain:layout style}
 
 .nav-cta,.nav-cta *{color:#fff!important}
+
+/* ── Skip to content (accesibilidad) ────────────────────── */
+.skip-link{position:absolute;top:-40px;left:0;background:var(--oro);color:#0E0D0B;
+  padding:8px 16px;font-weight:700;font-size:.85rem;z-index:999;
+  border-radius:0 0 8px 0;text-decoration:none;transition:top .15s}
+.skip-link:focus{top:0}
