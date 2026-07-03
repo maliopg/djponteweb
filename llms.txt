@@ -16,6 +16,7 @@
 ## Páginas
 - [Home](https://www.djponte.com/)
 - [Bodas](https://www.djponte.com/bodas/)
+- [Precios de bodas](https://www.djponte.com/bodas/precios/)
 - [Vinyl Set](https://www.djponte.com/vinilo/)
 - [Cumpleaños](https://www.djponte.com/cumpleanos/)
 - [Empresas](https://www.djponte.com/empresas/)
