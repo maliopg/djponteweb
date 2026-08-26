@@ -8,13 +8,23 @@ window.scrollTo(0, 0);
 const toggle = document.querySelector('.nav-toggle');
 const links  = document.querySelector('.nav-links');
 if(toggle && links){
-  toggle.addEventListener('click', () => {
-    const open = links.classList.toggle('open');
+  function setMenu(open, returnFocus = false){
+    links.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    if(returnFocus) toggle.focus();
+  }
+
+  toggle.addEventListener('click', () => {
+    setMenu(!links.classList.contains('open'));
   });
   document.addEventListener('click', e => {
     if(!e.target.closest('.nav') && links.classList.contains('open'))
-      links.classList.remove('open');
+      setMenu(false);
+  });
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && links.classList.contains('open'))
+      setMenu(false, true);
   });
 }
 
@@ -79,16 +89,43 @@ document.querySelectorAll('[data-carousel]').forEach(wrap => {
 /* Formulario contacto → WhatsApp */
 const form = document.getElementById('form-contacto');
 if(form){
+  const tipos = Object.freeze({
+    boda: 'una boda',
+    cumpleanos: 'un cumpleaños',
+    'evento-privado': 'un evento privado',
+    empresa: 'un evento de empresa',
+    'vermu-tardeo': 'un vermú o tardeo',
+    'vinyl-set': 'un Vinyl Set',
+    otro: 'otro evento'
+  });
+
+  const servicio = new URLSearchParams(window.location.search).get('servicio');
+  if(servicio && Object.prototype.hasOwnProperty.call(tipos, servicio))
+    form.tipo.value = servicio;
+
+  const clean = (value, max) => value.replace(/\s+/g, ' ').trim().slice(0, max);
+  const fechaEs = value => {
+    const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+    return match ? `${match[3]}/${match[2]}/${match[1]}` : '';
+  };
+
   form.addEventListener('submit', e => {
     e.preventDefault();
-    const nombre = form.nombre.value.trim();
-    const tipo   = form.tipo.value;
-    const fecha  = form.fecha.value;
-    const plan   = form.plan.value.trim();
+    const nombre    = clean(form.nombre.value, 60);
+    const tipo      = tipos[form.tipo.value];
+    const fecha     = fechaEs(form.fecha.value);
+    const localidad = clean(form.localidad.value, 80);
+    const plan      = clean(form.plan.value, 240);
     const num    = form.dataset.wa;
-    let msg = `Hola Emilio, soy ${nombre}. Quiero consultar disponibilidad para: ${tipo}`;
+    if(!nombre || !tipo) return;
+
+    let msg = `Hola Emilio, soy ${nombre}. Estoy buscando DJ para ${tipo}`;
     if(fecha) msg += ` el ${fecha}`;
-    if(plan)  msg += `. ${plan}`;
-    window.open(`https://wa.me/${num}?text=${encodeURIComponent(msg)}`, '_blank');
+    if(localidad) msg += ` en ${localidad}`;
+    msg += '. ';
+    if(plan) msg += `${plan}${/[.!?…]$/.test(plan) ? '' : '.'} `;
+    msg += 'He llegado desde djponte.com y quería consultar disponibilidad.';
+
+    window.location.assign(`https://wa.me/${num}?text=${encodeURIComponent(msg)}`);
   });
 }

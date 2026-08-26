@@ -85,31 +85,39 @@
 <section class="section light">
   <div class="wrap" style="max-width:600px">
     <div class="section-head">
-      <span class="eyebrow">FORMULARIO</span>
-      <h2>O escríbeme aquí</h2>
-      <p>Al enviar se abre WhatsApp con tu mensaje ya escrito.</p>
+      <span class="eyebrow">WHATSAPP</span>
+      <h2>Prepara tu consulta por WhatsApp</h2>
+      <p id="wa-form-help">Completa lo esencial y abriré WhatsApp con el mensaje preparado. Tú decides cuándo enviarlo.</p>
     </div>
-    <form id="form-contacto" data-wa="34669060192" style="display:grid;gap:18px">
+    <form id="form-contacto" data-wa="34669060192" aria-describedby="wa-form-help wa-form-note" style="display:grid;gap:18px">
       <div>
-        <label style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Tu nombre</label>
-        <input name="nombre" type="text" required autocomplete="name" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
+        <label for="nombre" style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required maxlength="60" autocomplete="name" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
       </div>
       <div>
-        <label style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Tipo de evento</label>
-        <select name="tipo" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
-          <option>Boda</option><option>Cumpleaños</option><option>Evento privado</option>
-          <option>Evento de empresa</option><option>Vermú / Tardeo</option><option>Vinyl Set</option><option>Otro</option>
+        <label for="tipo" style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Tipo de evento</label>
+        <select id="tipo" name="tipo" required style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
+          <option value="" selected disabled>Selecciona el tipo de evento</option>
+          <option value="boda">Boda</option><option value="cumpleanos">Cumpleaños</option>
+          <option value="evento-privado">Evento privado</option><option value="empresa">Evento de empresa</option>
+          <option value="vermu-tardeo">Vermú / Tardeo</option><option value="vinyl-set">Vinyl Set</option>
+          <option value="otro">Otro evento</option>
         </select>
       </div>
       <div>
-        <label style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Fecha aproximada</label>
-        <input name="fecha" type="date" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
+        <label for="fecha" style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Fecha (opcional)</label>
+        <input id="fecha" name="fecha" type="date" autocomplete="off" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
       </div>
       <div>
-        <label style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Cuéntame el plan (opcional)</label>
-        <textarea name="plan" rows="4" placeholder="Lugar, nº de invitados, horario…" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510;resize:vertical"></textarea>
+        <label for="localidad" style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Lugar o localidad (opcional)</label>
+        <input id="localidad" name="localidad" type="text" maxlength="80" autocomplete="address-level2" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510">
       </div>
-      <button type="submit" class="btn btn-wa"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7l-.4.6-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Enviar mi consulta</button>
+      <div>
+        <label for="plan" style="font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5C4E3A;display:block;margin-bottom:6px">Cuéntame brevemente tu plan (opcional)</label>
+        <textarea id="plan" name="plan" rows="3" maxlength="240" placeholder="Por ejemplo: número de invitados, horario o ambiente que buscas…" style="width:100%;padding:13px 16px;border:1px solid rgba(185,142,63,.4);border-radius:10px;font:inherit;font-size:.95rem;background:#FBF7F0;color:#1A1510;resize:vertical"></textarea>
+      </div>
+      <button type="submit" class="btn btn-wa" style="width:100%;white-space:normal;padding-inline:20px;text-align:center"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.1-2.2-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.6s.9-2.5 1.2-2.9c.3-.3.7-.4.9-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.7.1.2.2.4 0 .7l-.4.6-.6.7c-.2.2-.4.4-.2.8.2.3 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.1.8-.1.2-.2 1-1.1 1.2-1.5.3-.4.5-.3.9-.2.3.1 2.2 1 2.5 1.2.4.2.6.3.7.5.1.1.1.8-.2 1.6z"/></svg> Consultar disponibilidad por WhatsApp</button>
+      <p id="wa-form-note" class="micro" style="margin:0;text-align:center">Se abrirá WhatsApp con estos datos. Nada se envía hasta que tú pulses Enviar.</p>
     </form>
   </div>
 </section>
