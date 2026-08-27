@@ -163,12 +163,7 @@
       "permanent": true
     },
     {
-      "source": "/cumpleaños",
-      "destination": "https://www.djponte.com/cumpleanos/",
-      "permanent": true
-    },
-    {
-      "source": "/cumpleaños/",
+      "source": "/cumplea([%][cC]3[%][bB]1)os/",
       "destination": "https://www.djponte.com/cumpleanos/",
       "permanent": true
     }
