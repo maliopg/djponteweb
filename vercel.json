@@ -151,5 +151,26 @@
       ]
     }
   ],
-  "redirects": []
+  "redirects": [
+    {
+      "source": "/tarifas",
+      "destination": "https://www.djponte.com/bodas/precios/",
+      "permanent": true
+    },
+    {
+      "source": "/tarifas/",
+      "destination": "https://www.djponte.com/bodas/precios/",
+      "permanent": true
+    },
+    {
+      "source": "/cumpleaños",
+      "destination": "https://www.djponte.com/cumpleanos/",
+      "permanent": true
+    },
+    {
+      "source": "/cumpleaños/",
+      "destination": "https://www.djponte.com/cumpleanos/",
+      "permanent": true
+    }
+  ]
 }
